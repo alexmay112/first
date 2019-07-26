@@ -1,0 +1,139 @@
+.calendar {
+  .section__title {
+    max-width: 724px;
+    margin: 0 auto;
+  }
+
+  .hero-features__marker {
+    margin-top: -5px;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .hero-features__item {
+    max-width: none;
+    margin-bottom: 37px;
+    align-items: flex-start;
+  }
+
+  .hero-features__item-title {
+    margin-bottom: 14px;
+    display: block;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .hero-features__text {
+    margin: 0 0 0 18px;
+    line-height: 30px;
+  }
+
+  .product {
+    position: absolute;
+    left: -465px;
+    top: 57%;
+    transform: translateY(-50%);
+  }
+
+  .product__discont {
+    color: #000000;
+    background: url("../img/bg-discont-grad.svg") no-repeat;
+  }
+}
+
+@media (max-width: 479px) {
+  .calendar {
+    .section__title {
+      font-size: 30px;
+    }
+    .product {
+      min-width: auto;
+      width: 100%;
+      padding-bottom: 30px;
+      position: static;
+      background: none;
+      text-align: center;
+      transform: translateY(0);
+  
+      &__discont {
+        right: 90px;
+        top: -46px;
+      }
+  
+      &__image {
+        width: 250px;
+      }
+    }
+  }  
+}
+@media (min-width: 480px) and (max-width: 639px) {
+  .calendar {
+    .product {
+      padding-bottom: 30px;
+      position: static;
+      transform: translateY(0);
+  
+      &__discont {
+        right: 97px;
+        top: -40px;
+      }
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .calendar {
+    .product {
+      padding-bottom: 30px;
+      position: static;
+      transform: translateY(0);
+
+      &__discont {
+        right: 97px;
+        top: -40px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .calendar {
+    .product {
+      min-width: auto;
+      max-width: 390px;
+      margin-bottom: 40px;
+      position: static;
+      transform: translateY(0);
+      background: none;
+
+      &__discont {
+        right: 20px;
+      }
+
+      &__image {
+        max-width: 95%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .calendar {
+    .hero__text {
+      max-width: 410px;
+    }
+
+    .order-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .product {
+      margin-bottom: 40px;
+      position: static;
+      transform: translateY(0);
+    }
+  }
+}

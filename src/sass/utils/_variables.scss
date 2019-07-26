@@ -1,0 +1,13 @@
+$main-font: Roboto, sans-serif;
+$main-accent-color: #38c3bd;
+$second-accent-color: #e9766d;
+$color-attention: #ffb400;
+$color-main-text: #444444;
+
+$breakpoints: (
+  'small-min': (min-width: 320px),
+  'medium-min': (min-width: 800px),
+  'large-min': (min-width: 984px),
+  'huge-min': (min-width: 1200px),
+//  'large-huge-min': (min-width: 1025px) and (max-width: 1200px),
+);

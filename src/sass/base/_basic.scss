@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  // max-width: 100%;
+  display: inline-block;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  // color: $main-text-color;
+
+  &:hover {
+    // text-decoration: none;
+    // color: $main-text-color;
+    transition: 0.3s;
+  }
+}
+
+body {
+  position: relative;
+  color: $color-main-text;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+body,
+figure,
+ul, ol {
+  margin: 0;
+  padding: 0;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+li {
+  list-style: none;
+}
+
+.main-color-accent {
+  color: $main-accent-color;
+}
