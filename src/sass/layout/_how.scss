@@ -127,7 +127,6 @@
 @media (max-width: 1023px) {
     .how-list {
         margin: 100px 0;
-        // min-height: 500px;
         flex-direction: column;
     }
     .how-list__item {
@@ -137,7 +136,6 @@
 
 @media (max-width: 1199px) {
     .how-list {
-        // min-height: 500px;
         justify-content: space-around;
         background: none;
     }

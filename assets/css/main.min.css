@@ -468,7 +468,6 @@ li {
   min-height: 723px;
   background: url("../img/promo-man.png") 50% 100% no-repeat, url("../img/bg-promo.png") 50% no-repeat;
   background-size: auto, cover;
-  position: relative;
 }
 
 .hero__wrapper {
@@ -1753,5 +1752,54 @@ li {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
+}
+
+.fast {
+  background: url("../img/bg-promo.png") 50% no-repeat;
+  background-size: cover;
+}
+
+.fast .container {
+  padding: 100px 10px;
+  background: url("../img/bg-circles.png") 100% 0 no-repeat;
+  background-size: auto, contain;
+}
+
+.fast__title {
+  color: #000000;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  position: relative;
+}
+
+.fast__title:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background-color: #38c3bd;
+  left: 0;
+  top: -34px;
+}
+
+.fast__discription {
+  max-width: 500px;
+  margin: 36px 0;
+  font-size: 18px;
+}
+
+.fast__button.form__submit {
+  max-width: 360px;
+}
+
+.fast__people {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.fast__people-photo {
+  display: block;
 }
 /*# sourceMappingURL=main.min.css.map */

@@ -1,0 +1,48 @@
+.fast {
+    background: url("../img/bg-promo.png") 50% no-repeat;
+    background-size: cover;
+
+    .container {
+        padding: 100px 10px;
+        background:
+            // url("../img/bg-fast-people.png") 100% no-repeat,
+            url("../img/bg-circles.png") 100% 0 no-repeat;
+        background-size: auto, contain;
+    }
+
+    &__title {
+        color: #000000;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 4px;
+            background-color: $main-accent-color;
+            left: 0;
+            top: -34px;
+        }
+    }
+
+    &__discription {
+        max-width: 500px;
+        margin: 36px 0;
+        font-size: 18px;
+    }
+
+    &__button.form__submit {
+        max-width: 360px;
+    }
+    &__people {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        &-photo {
+            display: block;
+        }
+    }
+}
