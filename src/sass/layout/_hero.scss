@@ -157,7 +157,7 @@
     position: absolute;
     right: -20px;
     top: 110px;
-    background: url("../../../assets/img/form-arrow.svg") 0 0 no-repeat;
+    background: url("../img/form-arrow.svg") 0 0 no-repeat;
   }
 
 
@@ -266,7 +266,7 @@
 
     &:last-child {
       color: #ffffff;
-      background: url("../../../assets/img/bg-price-new.svg") 50% no-repeat;
+      background: url("../img/bg-price-new.svg") 50% no-repeat;
     }
   }
 
@@ -393,7 +393,7 @@
 
 @media (max-width: 1200px) {
   .hero {
-    background: url("../../../assets/img/bg-promo.png") 50% no-repeat;
+    background: url("../img/bg-promo.png") 50% no-repeat;
   }
 }
 
