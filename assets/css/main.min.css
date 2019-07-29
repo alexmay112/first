@@ -650,7 +650,7 @@ li {
   position: absolute;
   right: -20px;
   top: 110px;
-  background: url("../../../assets/img/form-arrow.svg") 0 0 no-repeat;
+  background: url("../img/form-arrow.svg") 0 0 no-repeat;
 }
 
 .form__title {
@@ -684,7 +684,7 @@ li {
 }
 
 .form__submit {
-  height: 65px;
+  min-height: 65px;
   padding: 10px 45px;
   border-radius: 32px;
   background-color: #ff7000;
@@ -772,7 +772,7 @@ li {
 
 .form__prices-wrapper:last-child {
   color: #ffffff;
-  background: url("../../../assets/img/bg-price-new.svg") 50% no-repeat;
+  background: url("../img/bg-price-new.svg") 50% no-repeat;
 }
 
 .form__old-price {
@@ -900,7 +900,7 @@ li {
 
 @media (max-width: 1200px) {
   .hero {
-    background: url("../../../assets/img/bg-promo.png") 50% no-repeat;
+    background: url("../img/bg-promo.png") 50% no-repeat;
   }
 }
 
@@ -958,6 +958,9 @@ li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .form__submit {
+    font-size: 20px;
   }
 }
 
@@ -1801,5 +1804,24 @@ li {
 
 .fast__people-photo {
   display: block;
+}
+
+@media (max-width: 767px) {
+  .fast .container {
+    background: none;
+  }
+  .fast__people {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .fast .container {
+    background: url("../img/bg-circles.png") 50% 0 no-repeat;
+    background-size: auto;
+  }
+  .fast__people {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.min.css.map */
