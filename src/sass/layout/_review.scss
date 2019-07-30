@@ -18,12 +18,9 @@
 
 .review-list {
   margin-bottom: 68px;
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-around;
 
   &__item {
-    max-width: 370px;
+    width: 370px;
     margin: 45px 15px 25px;
     display: inline-block;
     text-align: center;
@@ -44,7 +41,6 @@
     top: -40px;
     left: 50%;
     transform: translateX(-50%);
-
   }
 
   &__name {
@@ -164,6 +160,96 @@
   }
 }
 
+.slick-prev,
+.slick-next {
+  width: 40px;
+  height: 18px;
+}
+
+.slick-prev {
+  left: -45px;
+  z-index: 900;
+}
+
+.slick-next {
+  right: -45px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-size: 35px;
+  font-weight: 700;
+  color: $color-attention;
+  opacity: 1;
+}
+
+.slick-prev:hover::before,
+.slick-next:hover::before {
+  color: #63b969;
+}
+
+@media (min-width: 320px) and (max-width: 570px) {
+  .slick-prev {
+    top: 85px;
+    left: 45px;
+  }
+
+  .slick-next {
+    top: 85px;
+    right: 45px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 735px) {
+  .slick-prev {
+    top: 85px;
+    left: 45px;
+  }
+
+  .slick-next {
+    top: 85px;
+    right: 45px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 858px) {
+  .slick-prev {
+    top: 85px;
+    left: 45px;
+  }
+
+  .slick-next {
+    top: 85px;
+    right: 45px;
+  }
+}
+
+@media (min-width: 1015px) and (max-width: 1115px) {
+  .slick-prev {
+    top: 85px;
+    left: 45px;
+  }
+
+  .slick-next {
+    top: 85px;
+    right: 45px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1290px) {
+  .slick-prev {
+    top: 85px;
+    left: 45px;
+    z-index: 900;
+  }
+
+  .slick-next {
+    top: 85px;
+    right: 45px;
+  }
+}
+
+
 @media (max-width: 479px) {
   .review .form .input-wrapper {
     margin-right: 0;
@@ -182,33 +268,6 @@
   }
 }
 
-.slick-prev,
-.slick-next {
-  width: 40px;
-  height: 18px;
-}
-
-.slick-prev {
-  left: 25px;
-  z-index: 900;
-}
-
-.slick-next {
-  right: 25px;
-}
-
-.slick-prev::before,
-.slick-next::before {
-  font-size: 35px;
-  font-weight: 700;
-  color: $color-attention;
-  opacity: 1;
-}
-
-.slick-prev:hover::before,
-.slick-next:hover::before {
-  color: #63b969;
-}
 
 @media (min-width: 640px) and (max-width: 1023px) {
   .review .form .input-wrapper:first-child {

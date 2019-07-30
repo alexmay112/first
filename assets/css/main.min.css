@@ -1850,7 +1850,7 @@ li {
 }
 
 .review-list__item {
-  max-width: 370px;
+  width: 370px;
   margin: 45px 15px 25px;
   display: inline-block;
   text-align: center;
@@ -2011,21 +2011,6 @@ li {
           transform: translateX(-50%);
 }
 
-@media (max-width: 479px) {
-  .review .form .input-wrapper {
-    margin-right: 0;
-  }
-  .review .form .input-wrapper:first-child {
-    margin-right: 0;
-  }
-  .review .form .input-wrapper_login,
-  .review .form .input-wrapper_phone {
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-  }
-}
-
 .slick-prev,
 .slick-next {
   width: 40px;
@@ -2033,12 +2018,12 @@ li {
 }
 
 .slick-prev {
-  left: 25px;
+  left: -45px;
   z-index: 900;
 }
 
 .slick-next {
-  right: 25px;
+  right: -45px;
 }
 
 .slick-prev::before,
@@ -2052,6 +2037,77 @@ li {
 .slick-prev:hover::before,
 .slick-next:hover::before {
   color: #63b969;
+}
+
+@media (min-width: 320px) and (max-width: 570px) {
+  .slick-prev {
+    top: 85px;
+    left: 45px;
+  }
+  .slick-next {
+    top: 85px;
+    right: 45px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 735px) {
+  .slick-prev {
+    top: 85px;
+    left: 45px;
+  }
+  .slick-next {
+    top: 85px;
+    right: 45px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 858px) {
+  .slick-prev {
+    top: 85px;
+    left: 45px;
+  }
+  .slick-next {
+    top: 85px;
+    right: 45px;
+  }
+}
+
+@media (min-width: 1015px) and (max-width: 1115px) {
+  .slick-prev {
+    top: 85px;
+    left: 45px;
+  }
+  .slick-next {
+    top: 85px;
+    right: 45px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1290px) {
+  .slick-prev {
+    top: 85px;
+    left: 45px;
+    z-index: 900;
+  }
+  .slick-next {
+    top: 85px;
+    right: 45px;
+  }
+}
+
+@media (max-width: 479px) {
+  .review .form .input-wrapper {
+    margin-right: 0;
+  }
+  .review .form .input-wrapper:first-child {
+    margin-right: 0;
+  }
+  .review .form .input-wrapper_login,
+  .review .form .input-wrapper_phone {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
 }
 
 @media (min-width: 640px) and (max-width: 1023px) {
@@ -2094,7 +2150,7 @@ li {
 }
 
 .how .product {
-  top: 105px;
+  top: 150px;
   left: 52%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -2251,6 +2307,7 @@ li {
 
 @media (max-width: 1199px) {
   .how-list {
+    min-height: 150px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     background: none;
@@ -2271,7 +2328,7 @@ li {
 .fast .container {
   padding: 100px 10px;
   background: url("../img/bg-circles.png") 100% 0 no-repeat;
-  background-size: auto, contain;
+  background-size: contain;
 }
 
 .fast__title {
@@ -2312,6 +2369,18 @@ li {
   display: block;
 }
 
+@media (mix-width: 320px) and (max-width: 350px) {
+  .fast .container {
+    text-align: center;
+  }
+}
+
+@media (mix-width: 351px) and (max-width: 639px) {
+  .fast .container {
+    text-align: center;
+  }
+}
+
 @media (max-width: 767px) {
   .fast .container {
     background: none;
@@ -2319,12 +2388,16 @@ li {
   .fast__people {
     display: none;
   }
+  .fast__button {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .fast .container {
     background: url("../img/bg-circles.png") 50% 0 no-repeat;
-    background-size: auto;
+    background-size: contain;
   }
   .fast__people {
     display: none;
@@ -2510,6 +2583,7 @@ li {
 }
 
 .popup {
+  display: none;
   padding: 10px 50px;
   position: fixed;
   left: 0;

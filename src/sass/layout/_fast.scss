@@ -4,10 +4,8 @@
 
   .container {
     padding: 100px 10px;
-    background:
-      // url("../img/bg-fast-people.png") 100% no-repeat,
-      url("../img/bg-circles.png") 100% 0 no-repeat;
-    background-size: auto, contain;
+    background: url("../img/bg-circles.png") 100% 0 no-repeat;
+    background-size: contain;
   }
 
   &__title {
@@ -49,20 +47,37 @@
   }
 }
 
+@media (mix-width: 320px) and (max-width: 350px) {
+  .fast .container {
+    text-align: center;
+  }
+}
+
+@media (mix-width: 351px) and (max-width: 639px) {
+  .fast .container {
+    text-align: center;
+  }
+}
+
 @media (max-width: 767px) {
   .fast .container {
     background: none;
   }
+
   .fast__people {
     display: none;
   }
 
+  .fast__button {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .fast .container {
     background: url("../img/bg-circles.png") 50% 0 no-repeat;
-    background-size: auto;
+    background-size: contain;
   }
 
   .fast__people {

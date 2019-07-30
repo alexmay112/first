@@ -1,149 +1,150 @@
 .how {
-    .product {
-        top: 105px;
-        left: 52%;
-        transform: translate(-50%);
-        background: none;
-        text-align: center;
+  .product {
+    top: 150px;
+    left: 52%;
+    transform: translate(-50%);
+    background: none;
+    text-align: center;
+  }
+
+  &__individual {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  &__term {
+    padding: 20px 140px;
+    border-radius: 7px;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    background-color: #f4f9f8;
+    position: relative;
+
+    &:before {
+      width: 16px;
+      height: 16px;
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: -8px;
+      transform: rotate(38deg) skewX(-15deg);
+      background-color: #f4f9f8;
+
     }
-
-    &__individual {
-        margin-bottom: 30px;
-        font-size: 18px;
-        font-style: italic;
-        line-height: 20px;
-        text-align: center;
-    }
-
-    &__term {
-        padding: 20px 140px;
-        border-radius: 7px;
-        color: #000000;
-        font-size: 20px;
-        text-align: center;
-        background-color: #f4f9f8;
-        position: relative;
-
-        &:before {
-            width: 16px;
-            height: 16px;
-            content: "";
-            position: absolute;
-            left: 50%;
-            top: -8px;
-            transform: rotate(38deg) skewX(-15deg);
-            background-color: #f4f9f8;
-
-        }
-    }
+  }
 }
 
 .how-list {
-    min-height: 340px;
-    margin-bottom: 20px;
+  min-height: 340px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background: url("../img/arrow-land-.png") 50% 0 no-repeat;
+
+  &__item {
+    max-width: 370px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text {
+    margin-right: 30px;
+    text-align: right;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
     position: relative;
-    background: url("../img/arrow-land-.png") 50% 0 no-repeat;
 
-    &__item {
-        max-width: 370px;
-        display: flex;
-        align-items: center;
+    &::before {
+      content: "";
+      width: 30px;
+      height: 4px;
+      position: absolute;
+      background-color: $color-attention;
+      top: -22px;
+      right: 0;
+
     }
+  }
 
-    &__text {
-        margin-right: 30px;
-        text-align: right;
-        color: #000000;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 24px;
-        position: relative;
+  &__img-wrapper {
+    display: inline-flex;
+    position: relative;
+  }
 
-        &::before {
-            content: "";
-            width: 30px;
-            height: 4px;
-            position: absolute;
-            background-color: $color-attention;
-            top: -22px;
-            right: 0;
-
-        }
-    }
-
-    &__img-wrapper {
-        display: inline-flex;
-        position: relative;
-    }
-
-    &__number {
-        width: 34px;
-        height: 34px;
-        position: absolute;
-        right: 0;
-        top: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 24px;
-        border-radius: 100px;
-        box-shadow: 0 0 0 5px rgba($color: $main-accent-color, $alpha: 0.3);
-        background-color: $main-accent-color;
-    }
+  &__number {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    border-radius: 100px;
+    box-shadow: 0 0 0 5px rgba($color: $main-accent-color, $alpha: 0.3);
+    background-color: $main-accent-color;
+  }
 }
 
 .how-list__item:last-child {
-    .how-list__text {
-        margin-left: 30px;
-        margin-right: 0;
-        order: 1;
-        text-align: left;
+  .how-list__text {
+    margin-left: 30px;
+    margin-right: 0;
+    order: 1;
+    text-align: left;
 
-        &::before {
-            left: 0;
-        }
+    &::before {
+      left: 0;
     }
+  }
 
-    .how-list__img {
-        order: 0;
-    }
+  .how-list__img {
+    order: 0;
+  }
 
-    .how-list__number {
-        left: 0;
-    }
+  .how-list__number {
+    left: 0;
+  }
 }
 
 @media (max-width: 767px) {
-    .how__term {
-        padding: 20px;
-    }
+  .how__term {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 1023px) {
-    .how-list {
-        margin: 100px 0;
-        flex-direction: column;
-    }
-    .how-list__item {
-        margin: 0 auto;
-    }
+  .how-list {
+    margin: 100px 0;
+    flex-direction: column;
+  }
+
+  .how-list__item {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 1199px) {
-    .how-list {
-        justify-content: space-around;
-        background: none;
-    }
-    .how .product {
-        margin: 0 auto;
-        position: static;
-        transform: translate(0);
-    }
-}
+  .how-list {
+    min-height: 150px;
+    justify-content: space-around;
+    background: none;
+  }
 
-  
+  .how .product {
+    margin: 0 auto;
+    position: static;
+    transform: translate(0);
+  }
+}
