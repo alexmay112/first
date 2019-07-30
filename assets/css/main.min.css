@@ -2015,6 +2015,15 @@ li {
   }
 }
 
+.slick-prev {
+  left: 25px;
+  z-index: 900;
+}
+
+.slick-next {
+  right: 25px;
+}
+
 .slick-prev::before,
 .slick-next::before {
   font-size: 25px;
@@ -2306,17 +2315,35 @@ li {
 }
 
 .order__title {
+  margin-bottom: 11px;
+  padding-top: 24px;
   color: #000000;
   font-size: 20px;
   font-weight: 700;
+  position: relative;
+}
+
+.order__title:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 30px;
+  height: 4px;
+  background-color: #ffb400;
 }
 
 .order__discription {
+  margin-top: 0;
   font-size: 18px;
   line-height: 24px;
 }
 
 .order__list {
+  max-width: 1031px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2326,26 +2353,78 @@ li {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  counter-reset: section-order;
 }
 
-.order__list-wrapper {
-  border-radius: 500px;
-  border: 26px solid #f3f8f7;
-  overflow: hidden;
+.order__list-header {
+  position: relative;
+}
+
+.order__list-header:before {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  content: counter(section-order);
+  counter-increment: section-order;
+  background-color: #38c3bd;
+  top: 11px;
+  left: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100px;
+  -webkit-box-shadow: 0px 0px 0px 6px rgba(66, 202, 196, 0.3);
+          box-shadow: 0px 0px 0px 6px rgba(66, 202, 196, 0.3);
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .order__list-item {
-  width: auto;
-  min-width: 178px;
+  max-width: 236px;
   min-height: 178px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
   display: inline-block;
   text-align: center;
+  position: relative;
+}
+
+.order__list-item:first-child, .order__list-item:last-child {
+  padding-top: 50px;
+}
+
+.order__list-item:first-child:before, .order__list-item:nth-child(2):before {
+  width: 278px;
+  height: 130px;
+  position: absolute;
+  right: -182px;
+  top: 0;
+  content: "";
+  -webkit-transform: rotate(-39deg);
+          transform: rotate(-39deg);
+  background: url("../img/arrow-land-.png") 100% 0 no-repeat;
+}
+
+.order__list-item:nth-child(2):before {
+  -webkit-transform: rotate(-19deg);
+          transform: rotate(-19deg);
 }
 
 .order__list-img {
   display: block;
+}
+
+.order__circle-wrapper {
+  width: 230px;
+  margin: 0 auto;
+  border-radius: 500px;
+  border: 26px solid #f3f8f7;
+  overflow: hidden;
 }
 
 .order .form {
@@ -2382,5 +2461,30 @@ li {
 
 .order .form .form__submit-small {
   font-size: 12px;
+}
+
+@media (max-width: 767px) {
+  .order__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .order__list-item:first-child, .order__list-item:last-child {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .order__list-item:first-child:before, .order__list-item:nth-child(2):before {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .order__list-item:first-child:before, .order__list-item:nth-child(2):before {
+    right: -165px;
+    top: 0;
+  }
 }
 /*# sourceMappingURL=main.min.css.map */

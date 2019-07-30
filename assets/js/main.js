@@ -7,8 +7,7 @@ $(document).ready(function () {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          infinite: true,
-          dots: true
+          infinite: true
         }
       },
       {

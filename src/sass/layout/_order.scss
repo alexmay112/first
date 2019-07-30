@@ -1,38 +1,104 @@
 .order {
   &__title {
+    margin-bottom: 11px;
+    padding-top: 24px;
     color: #000000;
     font-size: 20px;
     font-weight: 700;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 30px;
+      height: 4px;
+      background-color: $color-attention;
+    }
   }
+
   &__discription {
+    margin-top: 0;
     font-size: 18px;
     line-height: 24px;
   }
 }
 
 .order__list {
+  max-width: 1031px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  counter-reset: section-order;
 
-  &-wrapper {
-    border-radius: 500px;
-    border: 26px solid #f3f8f7;
-    overflow: hidden;
+  &-header {
+    position: relative;
+
+    &:before {
+      width: 34px;
+      height: 34px;
+      position: absolute;
+      content: counter(section-order);
+      counter-increment: section-order;
+      background-color: $main-accent-color;
+      top: 11px;
+      left: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100px;
+      box-shadow: 0px 0px 0px 6px rgba(66, 202, 196, 0.3);
+      font-size: 18px;
+      color: #ffffff;
+      font-weight: 700;
+    }
   }
 
   &-item {
-    width: auto;
-    min-width: 178px;
+    max-width: 236px;
     min-height: 178px;
-    box-sizing: content-box;
     display: inline-block;
     text-align: center;
+    position: relative;
+
+    &:first-child,
+    &:last-child {
+      padding-top: 50px;
+    }
+
+    &:first-child,
+    &:nth-child(2) {
+      &:before {
+        width: 278px;
+        height: 130px;
+        position: absolute;
+        right: -182px;
+        top: 0;
+        content: "";
+        transform: rotate(-39deg);
+        background: url("../img/arrow-land-.png") 100% 0 no-repeat;
+      }
+    }
+
+    &:nth-child(2):before {
+      transform: rotate(-19deg);
+    }
   }
 
   &-img {
     display: block;
   }
+}
+
+.order__circle-wrapper {
+  width: 230px;
+  margin: 0 auto;
+  border-radius: 500px;
+  border: 26px solid #f3f8f7;
+  overflow: hidden;
 }
 
 .order .form {
@@ -66,6 +132,45 @@
 
     &-small {
       font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .order__list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &-item {
+
+      &:first-child,
+      &:last-child {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .order__list-item {
+
+    &:first-child,
+    &:nth-child(2) {
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .order__list-item {
+    &:first-child,
+    &:nth-child(2) {
+      &:before {
+        right: -165px;
+        top: 0;
+      }
     }
   }
 }
