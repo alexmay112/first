@@ -33,7 +33,6 @@
       top: -8px;
       transform: rotate(38deg) skewX(-15deg);
       background-color: #f4f9f8;
-
     }
   }
 }
@@ -45,6 +44,10 @@
   justify-content: space-between;
   position: relative;
   background: url("../img/arrow-land-.png") 50% 0 no-repeat;
+
+  // &__wrapper {
+  //   display: flex;
+  // }
 
   &__item {
     max-width: 370px;
@@ -119,6 +122,9 @@
 }
 
 @media (max-width: 767px) {
+  .how-list__wrapper {
+    flex-direction: column;
+  }
   .how__term {
     padding: 20px;
   }
@@ -126,12 +132,31 @@
 
 @media (max-width: 1023px) {
   .how-list {
-    margin: 100px 0;
+    margin-bottom: 50px;
     flex-direction: column;
+    &__wrapper {
+      display: flex;
+      // flex-wrap: wrap;
+      // justify-content: space-around;
+    }
   }
 
   .how-list__item {
-    margin: 0 auto;
+    margin: 0 auto 30px;
+
+    &:first-child .how-list__text {
+      margin: 22px 0 30px 30px;
+      order: 2;
+      text-align: left;
+
+      &::before {
+        left: 0;
+      }
+    }
+  }
+
+  .how-list__number {
+    left: 0;
   }
 }
 
