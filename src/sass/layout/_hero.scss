@@ -48,13 +48,19 @@
   &__marker {
     width: 32px;
     height: 32px;
+    padding-top: 0; // for IE
     display: inline-flex;
     flex-shrink: 0;
     justify-content: center;
     border-radius: 100%;
     background-color: $color-attention;
     box-shadow: 0px 0px 0px 6px rgba(244, 230, 208, 1);
+    &-img {
+      width: 24px;
+      height: 32px;
+    }
   }
+  
 
   &__text {
     margin-left: 18px;

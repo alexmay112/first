@@ -796,6 +796,7 @@ li {
 .hero-features__marker {
   width: 32px;
   height: 32px;
+  padding-top: 0;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -808,6 +809,11 @@ li {
   background-color: #ffb400;
   -webkit-box-shadow: 0px 0px 0px 6px #f4e6d0;
           box-shadow: 0px 0px 0px 6px #f4e6d0;
+}
+
+.hero-features__marker-img {
+  width: 24px;
+  height: 32px;
 }
 
 .hero-features__text {
@@ -1791,7 +1797,14 @@ li {
   margin: 0 auto;
 }
 
+.calendar .hero__text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
 .calendar .hero-features__marker {
+  width: auto;
+  height: auto;
   margin-top: -5px;
   background-color: transparent;
   -webkit-box-shadow: none;
