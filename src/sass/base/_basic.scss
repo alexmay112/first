@@ -24,13 +24,15 @@ body {
   color: $color-main-text;
 }
 
-ul, ol {
+ul,
+ol {
   list-style-type: none;
 }
 
 body,
 figure,
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding: 0;
   font-family: $main-font;
@@ -44,6 +46,10 @@ li {
 
 .main-color-accent {
   color: $main-accent-color;
+}
+
+.second-color-accent {
+  color: $second-accent-color;
 }
 
 .color-attention {

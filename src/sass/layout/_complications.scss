@@ -1,0 +1,120 @@
+.complications {
+  background: url("../img/bg-promo.png") 50% no-repeat;
+  background-size: cover;
+  text-align: center;
+
+  &__footer {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 28px;
+
+    &-title {
+      color: #000000;
+    }
+
+    &-discription {
+      color: $second-accent-color;
+    }
+  }
+}
+
+.weekly-list {
+  display: flex;
+
+  &__wrapper {
+    display: flex;
+    margin-bottom: 35px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 5px solid #f8f8f8;
+  }
+
+  &__item {
+    width: 235px;
+  }
+
+  &__header {
+    max-width: 265px;
+    text-align: left;
+    font-size: 19px;
+    font-weight: 700;
+
+    &-title,
+    &-count,
+    &-discription {
+      margin: 0;
+      padding-left: 25px;
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    &-title {
+      height: 69px;
+      background: url("../img/icon-calendar-4.svg") 25px 50% no-repeat;
+    }
+
+    &-count {
+      height: 183px;
+      display: flex;
+      align-items: center;
+    }
+
+    &-discription {
+      height: 128px;
+      padding-top: 30px;
+    }
+  }
+
+  &__title,
+  &__count,
+  &__discription {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  &__title {
+    height: 69px;
+    font-weight: 700;
+    align-items: center;
+  }
+
+  &__count {
+    height: 183px;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__toilet {
+    width: 86px;
+    height: 103px;
+    background: url("../img/toilet.png") 50% no-repeat;
+    background-size: 63px auto;
+    position: relative;
+
+    &-x {
+      position: absolute;
+      right: 12px;
+      top: 5px;
+      height: 26px;
+      width: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100px;
+      font-size: 14px;
+      background-color: $second-accent-color;
+    }
+  }
+
+  &__discription {
+    height: 128px;
+    padding-top: 30px;
+    color: #ffb400;
+  }
+}
