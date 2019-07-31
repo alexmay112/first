@@ -120,6 +120,9 @@
 
 @media (min-width: 1024px) and (max-width: 1200px) {
   .calendar {
+    .hero__wrapper {
+      justify-content: space-around;
+    }
     .hero__text {
       max-width: 410px;
     }
