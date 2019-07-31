@@ -84,6 +84,12 @@
     font-weight: 900;
     box-shadow: 0px 0px 0px 6px rgba(244, 230, 208, .5);
     background-color: $color-attention;
+    background-image: url("../img/arrow-down-white.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    &:hover {
+      box-shadow: 0px 0px 0px 10px rgba(244, 230, 208, 0.5);
+    }
   }
 }
 

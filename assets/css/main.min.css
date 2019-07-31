@@ -1449,6 +1449,14 @@ li {
   -webkit-box-shadow: 0px 0px 0px 6px rgba(244, 230, 208, 0.5);
           box-shadow: 0px 0px 0px 6px rgba(244, 230, 208, 0.5);
   background-color: #ffb400;
+  background-image: url("../img/arrow-down-white.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.reasons-list__link:hover {
+  -webkit-box-shadow: 0px 0px 0px 10px rgba(244, 230, 208, 0.5);
+          box-shadow: 0px 0px 0px 10px rgba(244, 230, 208, 0.5);
 }
 
 @media (min-width: 1220px) {
@@ -1477,10 +1485,15 @@ li {
   color: #e9766d;
 }
 
+.complications .reasons-list__link {
+  width: 23px;
+  height: 23px;
+  background-size: 5px 11px;
+}
+
 .weekly-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  max-width: 905px;
+  display: inline-block;
 }
 
 .weekly-list__wrapper {
@@ -1495,12 +1508,22 @@ li {
   border: 5px solid #f8f8f8;
 }
 
+.weekly-list .slick-list {
+  overflow-x: hidden;
+}
+
 .weekly-list__item {
   width: 235px;
+  background-color: #fff;
+}
+
+.weekly-list__item:hover {
+  cursor: pointer;
 }
 
 .weekly-list__header {
   max-width: 265px;
+  display: inline-block;
   text-align: left;
   font-size: 19px;
   font-weight: 700;
@@ -1531,6 +1554,7 @@ li {
 .weekly-list__header-discription {
   height: 128px;
   padding-top: 30px;
+  border-bottom: none;
 }
 
 .weekly-list__title, .weekly-list__count, .weekly-list__discription {
@@ -1556,6 +1580,7 @@ li {
 
 .weekly-list__count {
   height: 183px;
+  padding-bottom: 26px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1569,17 +1594,18 @@ li {
 .weekly-list__toilet {
   width: 86px;
   height: 103px;
-  background: url("../img/toilet.png") 50% no-repeat;
+  margin-bottom: 21px;
+  background: url("../img/toilet.png") 50% 100% no-repeat;
   background-size: 63px auto;
   position: relative;
 }
 
 .weekly-list__toilet-x {
-  position: absolute;
-  right: 12px;
-  top: 5px;
   height: 26px;
   width: 26px;
+  position: absolute;
+  right: 12px;
+  bottom: 58px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1596,8 +1622,76 @@ li {
 
 .weekly-list__discription {
   height: 128px;
-  padding-top: 30px;
+  padding: 30px 18px 21px;
+  border-bottom: none;
   color: #ffb400;
+  line-height: 20px;
+}
+
+.weekly-list__item:nth-child(2) .weekly-list__toilet {
+  background-size: 72px auto;
+}
+
+.weekly-list__item:nth-child(2) .weekly-list__toilet-x {
+  height: 30px;
+  width: 30px;
+  right: 7px;
+  font-size: 15px;
+}
+
+.weekly-list__item:nth-child(2) .weekly-list__discription {
+  color: #ff9000;
+}
+
+.weekly-list__item:nth-child(2) .reasons-list__link {
+  background-color: #ff9000;
+}
+
+.weekly-list__item:nth-child(3) .weekly-list__toilet {
+  background-size: 80px auto;
+}
+
+.weekly-list__item:nth-child(3) .weekly-list__toilet-x {
+  height: 34px;
+  width: 34px;
+  right: 2px;
+  font-size: 16px;
+}
+
+.weekly-list__item:nth-child(3) .weekly-list__discription {
+  color: #fc6500;
+}
+
+.weekly-list__item:nth-child(3) .reasons-list__link {
+  background-color: #fc6500;
+}
+
+.weekly-list__item:nth-child(4) .weekly-list__title {
+  border-right: none;
+}
+
+.weekly-list__item:nth-child(4) .weekly-list__count {
+  border-right: none;
+}
+
+.weekly-list__item:nth-child(4) .weekly-list__toilet {
+  background-size: 85px auto;
+}
+
+.weekly-list__item:nth-child(4) .weekly-list__toilet-x {
+  height: 38px;
+  width: 38px;
+  right: 0;
+  font-size: 18px;
+}
+
+.weekly-list__item:nth-child(4) .weekly-list__discription {
+  border: none;
+  color: #e9766d;
+}
+
+.weekly-list__item:nth-child(4) .reasons-list__link {
+  background-color: #e9766d;
 }
 
 .calendar .section__title {

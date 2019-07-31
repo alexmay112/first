@@ -1,4 +1,10 @@
 $(document).ready(function () {
+  $('.weekly-list').slick({
+    arrows: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    infinite: false
+  });
   $('.review-list').slick({
     arrows: true,
     slidesToShow: 3,
