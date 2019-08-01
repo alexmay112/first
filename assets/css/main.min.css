@@ -2426,6 +2426,11 @@ li {
   display: none;
 }
 
+.review-list__link-img_rotate {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 .review .form {
   max-width: none;
   display: -webkit-box;

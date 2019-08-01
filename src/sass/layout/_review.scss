@@ -144,6 +144,11 @@
   }
 }
 
+.review-list__link-img_rotate {
+  transform: rotate(45deg);
+}
+
+
 .review .form {
   max-width: none;
   display: flex;
