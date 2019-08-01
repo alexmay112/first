@@ -16,7 +16,6 @@
   flex-direction: column;
 
   &:last-child {
-    align-items: flex-end;
 
     .components-list__header {
       justify-content: flex-start;
@@ -39,6 +38,15 @@
 
   &__item {
     max-width: 375px;
+
+    &:hover {
+      cursor: pointer;
+
+      .components-list__img {
+        border: 4px solid $color-attention;
+        box-shadow: inset 0 0 0 2px $color-attention;
+      }
+    }
   }
 
   &__title {
@@ -76,16 +84,95 @@
 }
 
 @media (max-width: 1023px) {
+
   .components__wrapper {
     flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .components-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .components-list,
+  .components-list:last-child .components-list {
+    &__item {
+      width: 38%;
+    }
+
+    &__header {
+      flex-direction: column;
+      text-align: left;
+      text-align: center;
+    }
+
+    &__title-wrapper {
+      order: 1;
+    }
+
+    &__img {
+      margin: 0 auto;
+      order: 0;
+    }
+
+    &__discription {
+      padding: 0 5px;
+      text-align: center;
+    }
+  }
+}
+
+
+@media (max-width: 1199px) {
+
+  .components-list:last-child {
+    align-items: flex-end;
+  }
+}
+
+@media (max-width: 1023px) {
+  .components-list:last-child {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .components-list:last-child {
+    align-items: flex-start;
+  }
+
+  .components__wrapper {
     background: none;
   }
-  .components-list__item {
-    max-width: 500px;
-    margin: 0 auto;
-    margin-bottom: 40px;
+
+  .components-list,
+  .components-list:last-child .components-list {
+    &__item {
+      width: 50%;
+    }
   }
+}
+
+@media (max-width: 479px) {
+  .components-list {
+    justify-content: space-around;
+  }
+
+  .components-list,
   .components-list:last-child {
-    align-items: unset;
+    flex-direction: column;
+    align-items: center;
+
+    .components-list__item {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .components-list:last-child {
+    align-items: flex-end;
   }
 }
