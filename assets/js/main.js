@@ -5,7 +5,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     infinite: false,
     responsive: [{
-        breakpoint: 1200,
+        breakpoint: 1201,
         settings: {
           slidesToShow: 3,
         }
@@ -17,13 +17,14 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 659,
+        breakpoint: 430,
         settings: {
           slidesToShow: 1,
         }
       }
     ]
   });
+
   $('.review-list').slick({
     arrows: true,
     slidesToShow: 3,
