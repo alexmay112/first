@@ -2247,6 +2247,9 @@ li {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .doctor__text {
+    padding-top: 40px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2351,12 +2354,14 @@ li {
 }
 
 .review-list__item-discription {
+  max-height: 200px;
   margin: 0;
   padding: 30px;
   position: relative;
   font-size: 18px;
   line-height: 24px;
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 .review-list__item-discription:before {
@@ -2364,11 +2369,25 @@ li {
   position: absolute;
   width: 30px;
   height: 4px;
+  top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: 0;
   background-color: #38c3bd;
+}
+
+.review-list__item-discription:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 29px;
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(white));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .review-list__link {
@@ -2397,6 +2416,14 @@ li {
 .review-list__link:hover {
   -webkit-box-shadow: 0px 0px 0px 10px rgba(244, 230, 208, 0.5);
           box-shadow: 0px 0px 0px 10px rgba(244, 230, 208, 0.5);
+}
+
+.review-list__item-discription_expand {
+  max-height: none;
+}
+
+.review-list__item-discription_expand::after {
+  display: none;
 }
 
 .review .form {

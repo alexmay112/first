@@ -85,6 +85,10 @@
   .doctor__wrapper {
     flex-direction: column;
   }
+
+  .doctor__text {
+    padding-top: 40px;
+  }
 }
 
 @media (min-width: 1024px) {
