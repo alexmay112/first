@@ -2,7 +2,8 @@
   .product {
     top: 150px;
     left: 52%;
-    transform: translate(-50%);
+    bottom: auto;
+    transform: translateX(-50%);
     background: none;
     text-align: center;
   }
@@ -38,7 +39,6 @@
 }
 
 .how-list {
-  min-height: 340px;
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
@@ -47,11 +47,13 @@
 
   &__item {
     max-width: 370px;
+    padding: 110px 0; // for IE
     display: flex;
     align-items: center;
   }
 
   &__text {
+    max-width: 220px; // for IE
     margin-right: 30px;
     text-align: right;
     color: #000000;
@@ -160,6 +162,9 @@
     min-height: 150px;
     justify-content: space-around;
     background: none;
+  }
+  .how-list__item {
+    padding: 0;
   }
 
   .how .product {

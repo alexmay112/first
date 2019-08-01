@@ -104,6 +104,11 @@
     }
   }
 }
+@media (max-width: 767px) {
+  .calendar .hero__text {
+    flex-basis: auto; //for IE
+  }
+}
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .calendar {

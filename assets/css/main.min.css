@@ -738,7 +738,12 @@ li {
 }
 
 .components.section {
+  min-height: 770px;
   padding-bottom: 0;
+}
+
+.doctor.section {
+  min-height: 890px;
 }
 
 @media (max-width: 479px) {
@@ -1918,6 +1923,13 @@ li {
   }
 }
 
+@media (max-width: 767px) {
+  .calendar .hero__text {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .calendar .product {
     min-width: auto;
@@ -1982,8 +1994,6 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2269,8 +2279,14 @@ li {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .doctor__image {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
   .doctor__text {
     padding-top: 40px;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
 }
 
@@ -2648,8 +2664,9 @@ li {
 .how .product {
   top: 150px;
   left: 52%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  bottom: auto;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   background: none;
   text-align: center;
 }
@@ -2685,7 +2702,6 @@ li {
 }
 
 .how-list {
-  min-height: 340px;
   margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2699,6 +2715,7 @@ li {
 
 .how-list__item {
   max-width: 370px;
+  padding: 110px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2708,6 +2725,7 @@ li {
 }
 
 .how-list__text {
+  max-width: 220px;
   margin-right: 30px;
   text-align: right;
   color: #000000;
@@ -2832,6 +2850,9 @@ li {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     background: none;
+  }
+  .how-list__item {
+    padding: 0;
   }
   .how .product {
     margin: 0 auto;

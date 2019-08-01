@@ -86,8 +86,13 @@
     flex-direction: column;
   }
 
+  .doctor__image {
+    flex-basis: auto; //for IE
+  }
+
   .doctor__text {
     padding-top: 40px;
+    flex-basis: auto; //for IE
   }
 }
 

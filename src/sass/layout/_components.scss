@@ -12,7 +12,7 @@
 
 .components-list {
   display: flex;
-  flex-basis: 50%;
+  // flex-basis: 50%;
   flex-direction: column;
 
   &:last-child {
@@ -138,8 +138,12 @@
 }
 
 @media (max-width: 767px) {
+  .components-list {
+    // flex-basis: auto;
+  }
   .components-list:last-child {
     align-items: flex-start;
+    // flex-basis: auto;
   }
 
   .components__wrapper {
