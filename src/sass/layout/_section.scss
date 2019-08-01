@@ -18,12 +18,24 @@
     line-height: 18px;
   }
 }
+
 .components.section {
   padding-bottom: 0;
 }
 
+
 @media (max-width: 479px) {
   .section__title {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .section {
+    padding: 50px 0;
+  }
+
+  .section__title {
+    margin-bottom: 10px;
   }
 }

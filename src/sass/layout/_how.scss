@@ -123,12 +123,13 @@
   }
   .how__term {
     padding: 20px;
+    margin: 0;
   }
 }
 
 @media (max-width: 1023px) {
   .how-list {
-    margin-bottom: 50px;
+    margin-bottom: 0;
     flex-direction: column;
     &__wrapper {
       display: flex;

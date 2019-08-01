@@ -28,6 +28,7 @@
     border-radius: 5px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
     position: relative;
+    // outline: none;
   }
 
   &__item-title {
@@ -325,6 +326,9 @@
     .input-wrapper_clip {
       flex-basis: 100%;
     }
+  }
+  .review-list {
+    margin-bottom: 0;
   }
 }
 

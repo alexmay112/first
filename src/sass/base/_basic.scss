@@ -7,9 +7,14 @@ img {
   display: inline-block;
 }
 
+input {
+  outline: none;
+}
+
 a {
   display: inline-block;
   text-decoration: none;
+  outline: none;
   // color: $main-text-color;
 
   &:hover {
@@ -42,6 +47,7 @@ ol {
 
 li {
   list-style: none;
+  outline: none;
 }
 
 .main-color-accent {
