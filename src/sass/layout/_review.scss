@@ -170,10 +170,24 @@
 
     &_clip {
       margin-right: 0;
-      flex-basis: 550px;
     }
   }
 
+  .form__input_text-wrapper .form__input {
+    margin-right: 0;
+  }
+
+  .form__input_clip-wrapper {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 100px;
+    overflow: hidden;
+  }
+  
   &__submit {
     max-width: 340px;
     position: absolute;
@@ -314,7 +328,7 @@
       flex-grow: 1;
     }
 
-    &__input_clip {
+    &__input_text-wrapper {
       flex-basis: 100%;
     }
   }
