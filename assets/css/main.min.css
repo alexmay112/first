@@ -682,7 +682,7 @@ li {
 
 @media (max-width: 479px) {
   .container {
-    max-width: 100%;
+    max-width: 320px;
   }
 }
 
@@ -1551,6 +1551,7 @@ li {
 }
 
 .weekly-list__header {
+  max-width: 250px;
   text-align: left;
   font-size: 19px;
   font-weight: 700;
@@ -1793,31 +1794,34 @@ li {
 
 @media (max-width: 1200px) {
   .complications .weekly-list {
-    max-width: 720px;
+    max-width: 744px;
   }
 }
 
 @media (max-width: 1023px) {
   .complications .weekly-list {
-    max-width: 540px;
+    max-width: 488px;
   }
 }
 
 @media (max-width: 767px) {
   .complications .weekly-list {
-    max-width: 445px;
+    max-width: 360px;
   }
 }
 
-@media (max-width: 648px) {
+@media (max-width: 639px) {
   .complications .weekly-list {
-    max-width: 277px;
+    max-width: 200px;
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 479px) {
+  .complications .weekly-list__header {
+    width: 100px;
+  }
   .complications .weekly-list {
-    max-width: 184px;
+    width: 190px;
   }
 }
 

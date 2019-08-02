@@ -25,9 +25,6 @@
 }
 
 .weekly-list {
-  // max-width: 905px;
-  // display: inline-block;
-
   &__wrapper {
     display: flex;
     margin-bottom: 35px;
@@ -42,10 +39,10 @@
     font-size: 25px;
   }
 
-  .slick-list {
-    // overflow: visible;
-    // overflow-x: hidden;
-  }
+  // .slick-list {
+  //   overflow: visible;
+  //   overflow-x: hidden;
+  // }
 
   &__item {
     width: 235px;
@@ -70,6 +67,7 @@
   }
 
   &__header {
+    max-width: 250px;
     text-align: left;
     font-size: 19px;
     font-weight: 700;
@@ -255,7 +253,7 @@
   }
 }
 
-
+// media for slick prev/next arrows
 @media (min-width: 320px) and (max-width: 570px) {
   .complications .slick-prev {
     top: 29px;
@@ -317,37 +315,37 @@
   }
 }
 
-
-
-
-
-
+// media for complications slider
 @media (max-width: 1200px) {
   .complications .weekly-list {
-    max-width: 720px;
+    max-width: 744px;
   }
 }
 
 @media (max-width: 1023px) {
   .complications .weekly-list {
-    max-width: 540px;
+    max-width: 488px;
   }
 }
 
 @media (max-width: 767px) {
   .complications .weekly-list {
-    max-width: 445px;
+    max-width: 360px;
   }
 }
 
-@media (max-width: 648px) {
+@media (max-width: 639px) {
   .complications .weekly-list {
-    max-width: 277px;
+    max-width: 200px;
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 479px) {
+  .complications .weekly-list__header {
+    width: 100px;
+  }
+
   .complications .weekly-list {
-    max-width: 184px;
+    width: 190px;
   }
 }
