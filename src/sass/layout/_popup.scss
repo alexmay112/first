@@ -91,6 +91,10 @@
 }
 
 @media (max-width: 479px) {
+  .popup {
+    padding: 10px 20px;
+  }
+
   .popup__wrapper {
     max-width: 300px;
   }

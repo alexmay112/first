@@ -275,7 +275,7 @@
     padding: 25px 25px 25px 55px;
     border-radius: 32px;
     position: relative;
-    background:#f6f9f8 url("../img/icon-login.svg") 20px 50% no-repeat;
+    background: #f6f9f8 url("../img/icon-login.svg") 20px 50% no-repeat;
 
     &:hover {
       color: #000000;
@@ -336,9 +336,9 @@
 }
 
 .form .form__input_clip {
-    padding-left: 20px;
-    background-image: url("../img/icon-clip.svg");
-    background-position: 90% 50%;
+  padding-left: 20px;
+  background-image: url("../img/icon-clip.svg");
+  background-position: 90% 50%;
 }
 
 @media (min-width: 1315px) {
@@ -452,6 +452,19 @@
     background-size: cover;
   }
 
+  .hero-features__item {
+    padding-right: 6px;
+  }
+
+  .hero-features__list {
+    margin-bottom: 30px;
+    display: flex;
+  }
+
+  .hero-features__text {
+    font-size: 16px;
+  }
+
   .hero__wrapper {
     flex-direction: column;
   }
@@ -488,11 +501,32 @@
     background-size: cover;
   }
 
+  .hero-features {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-features__list {
+    margin-bottom: 30px;
+    display: flex;
+  }
+
+  .hero-features__item {
+    padding-right: 6px;
+    flex: 1;
+  }
+
+  .hero__wrapper {
+    flex-direction: column;
+  }
+
   .product {
     min-width: auto;
     max-width: 390px;
-    margin-bottom: 40px;
-    position: static;
+    margin-top: 40px;
+    position: relative;
+    left: 0;
+    bottom: auto;
     background: none;
 
     &__discont {
@@ -505,10 +539,10 @@
   }
 
   .order-wrapper {
-    margin-left: 45px;
+    margin-left: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 

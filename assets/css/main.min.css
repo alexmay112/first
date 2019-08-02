@@ -1265,6 +1265,18 @@ li {
     padding-bottom: 60px;
     background-size: cover;
   }
+  .hero-features__item {
+    padding-right: 6px;
+  }
+  .hero-features__list {
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero-features__text {
+    font-size: 16px;
+  }
   .hero__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1306,11 +1318,40 @@ li {
     padding-bottom: 60px;
     background-size: cover;
   }
+  .hero-features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-features__list {
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero-features__item {
+    padding-right: 6px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .hero__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .product {
     min-width: auto;
     max-width: 390px;
-    margin-bottom: 40px;
-    position: static;
+    margin-top: 40px;
+    position: relative;
+    left: 0;
+    bottom: auto;
     background: none;
   }
   .product__discont {
@@ -1320,17 +1361,17 @@ li {
     max-width: 95%;
   }
   .order-wrapper {
-    margin-left: 45px;
+    margin-left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1804,7 +1845,7 @@ li {
     min-width: 100px;
   }
   .complications .weekly-list {
-    width: 190px;
+    width: 172px;
   }
 }
 
@@ -3226,6 +3267,9 @@ li {
 }
 
 @media (max-width: 479px) {
+  .popup {
+    padding: 10px 20px;
+  }
   .popup__wrapper {
     max-width: 300px;
   }
