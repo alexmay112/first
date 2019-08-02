@@ -1169,6 +1169,7 @@ li {
   background-image: url("../img/icon-clip.svg");
   background-position: 50%;
   background-repeat: no-repeat;
+  background-color: transparent;
 }
 
 .form .form__input_clip:hover {
@@ -1604,6 +1605,11 @@ li {
 
 .weekly-list__item:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
 }
 
 .weekly-list__header {
@@ -1882,7 +1888,7 @@ li {
 }
 
 .calendar .section__title {
-  max-width: 724px;
+  max-width: 727px;
   margin: 0 auto 92px;
 }
 
@@ -2400,7 +2406,7 @@ li {
 }
 
 .review .section__title {
-  max-width: 705px;
+  max-width: 710px;
 }
 
 .review__feedback {

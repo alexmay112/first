@@ -360,6 +360,7 @@
   background-image: url("../img/icon-clip.svg");
   background-position: 50%;
   background-repeat: no-repeat;
+  background-color: transparent; // for IE
 
   &:hover {
     cursor: pointer;
