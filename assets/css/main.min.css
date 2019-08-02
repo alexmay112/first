@@ -1981,6 +1981,12 @@ li {
 }
 
 @media (max-width: 767px) {
+  .calendar .hero-features__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .calendar .hero__text {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
@@ -2010,26 +2016,34 @@ li {
     margin-bottom: 45px;
   }
   .calendar .hero__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .calendar .hero-features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .calendar .hero__text {
-    max-width: 410px;
+    max-width: none;
   }
   .calendar .order-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .calendar .product {
-    margin-bottom: 40px;
     position: static;
     -webkit-transform: translateY(0);
             transform: translateY(0);
