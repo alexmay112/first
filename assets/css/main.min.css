@@ -1158,7 +1158,7 @@ li {
 .form .form__input_text-wrapper .form__input {
   width: 100%;
   margin-right: 0;
-  padding-left: 20px;
+  padding: 25px 55px 25px 25px;
   background-image: none;
 }
 
@@ -1225,6 +1225,9 @@ li {
   }
   .bulits__item:not(:last-child) {
     margin-bottom: 20px;
+  }
+  .bulits__item:last-child .bulits__text {
+    margin-left: 0;
   }
   .hero {
     padding-bottom: 60px;

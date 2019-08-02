@@ -106,11 +106,10 @@
 }
 
 @media (max-width: 767px) {
-
-  
   .calendar .hero-features__list {
     flex-direction: column;
   }
+
   .calendar .hero__text {
     flex-basis: auto; //for IE
   }
@@ -163,7 +162,6 @@
     }
 
     .product {
-      // margin-bottom: 40px;
       position: static;
       transform: translateY(0);
     }
