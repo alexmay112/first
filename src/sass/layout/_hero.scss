@@ -106,10 +106,13 @@
 
   &__text {
     margin-left: 16px;
+    display: flex;
+    align-items: center;
     color: #555555;
   }
 
   &__call {
+    margin-left: 10px;
     color: #000000;
     line-height: 12px;
     border-bottom: 1px solid rgba(0, 0, 0, .2);
