@@ -1,7 +1,7 @@
 .calendar {
   .section__title {
     max-width: 724px;
-    margin: 0 auto;
+    margin: 0 auto 92px;
   }
 
   .hero__text {
@@ -104,6 +104,7 @@
     }
   }
 }
+
 @media (max-width: 767px) {
   .calendar .hero__text {
     flex-basis: auto; //for IE
@@ -133,6 +134,10 @@
 
 @media (min-width: 1024px) and (max-width: 1200px) {
   .calendar {
+    .section__title {
+      margin-bottom: 45px;
+    }
+
     .hero__wrapper {
       justify-content: space-around;
     }

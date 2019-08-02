@@ -116,13 +116,15 @@
     }
   }
 
-  .input-wrapper_login {
+  .input-wrapper:first-child {
     margin-top: 0;
   }
 
   .form__input {
     padding: 13px 13px 13px 40px;
     font-size: 12px;
+    background-position: 15px 50%;
+    background-size: 16px;
   }
 
   .form__submit {

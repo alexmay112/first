@@ -342,7 +342,7 @@
 
 @media (max-width: 479px) {
   .complications .weekly-list__header {
-    width: 100px;
+    min-width: 100px;
   }
 
   .complications .weekly-list {

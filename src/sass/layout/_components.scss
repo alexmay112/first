@@ -12,7 +12,6 @@
 
 .components-list {
   display: flex;
-  // flex-basis: 50%;
   flex-direction: column;
 
   &:last-child {
@@ -123,9 +122,11 @@
   }
 }
 
-
 @media (max-width: 1199px) {
 
+  .components__wrapper {
+    justify-content: space-between;
+  }
   .components-list:last-child {
     align-items: flex-end;
   }
@@ -175,7 +176,9 @@
 }
 
 @media (min-width: 1200px) {
-
+  .components__wrapper {
+    justify-content: space-between;
+  }
   .components-list:last-child {
     align-items: flex-end;
   }

@@ -1068,23 +1068,9 @@ li {
   position: relative;
 }
 
-.form .input-wrapper:before {
-  content: "";
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 27px;
-  height: 27px;
-  background: url("../img/icon-login.svg") 50% no-repeat;
-  z-index: 1;
-}
-
 .form__input {
   max-width: 100%;
   border: 1px solid #f0efef;
-  background-color: #f6f9f8;
   color: #666666;
   font-size: 16px;
   line-height: 18px;
@@ -1093,6 +1079,7 @@ li {
   padding: 25px 25px 25px 55px;
   border-radius: 32px;
   position: relative;
+  background: #f6f9f8 url("../img/icon-login.svg") 20px 50% no-repeat;
 }
 
 .form__input:hover {
@@ -1107,8 +1094,8 @@ li {
   border: none;
   border-radius: 32px;
   background-color: #ff7000;
-  -webkit-box-shadow: inset 0 0 4px rgba(247, 207, 123, 0.48), 0px 14px 15px -11px #fbac7d;
-          box-shadow: inset 0 0 4px rgba(247, 207, 123, 0.48), 0px 14px 15px -11px #fbac7d;
+  -webkit-box-shadow: inset 0 0 4px rgba(247, 207, 123, 0.48), 0px 14px 15px -11px #fbac7d, 0px 3px 0px 0px #ff7000, 0px 16px 26px -13px #e7501b;
+          box-shadow: inset 0 0 4px rgba(247, 207, 123, 0.48), 0px 14px 15px -11px #fbac7d, 0px 3px 0px 0px #ff7000, 0px 16px 26px -13px #e7501b;
   color: #ffffff;
   font-size: 28px;
   line-height: 22px;
@@ -1149,18 +1136,14 @@ li {
   padding-left: 30px;
 }
 
-.form .input-wrapper_phone:before {
-  background: url("../img/icon-phone-form.svg") 50% no-repeat;
+.form .form__input_phone {
+  background-image: url("../img/icon-phone-form.svg");
 }
 
-.form .input-wrapper_clip .form__input {
+.form .form__input_clip {
   padding-left: 20px;
-}
-
-.form .input-wrapper_clip:before {
-  left: auto;
-  right: 20px;
-  background: url("../img/icon-clip.svg") 50% no-repeat;
+  background-image: url("../img/icon-clip.svg");
+  background-position: 90% 50%;
 }
 
 @media (min-width: 1315px) {
@@ -1818,7 +1801,7 @@ li {
 
 @media (max-width: 479px) {
   .complications .weekly-list__header {
-    width: 100px;
+    min-width: 100px;
   }
   .complications .weekly-list {
     width: 190px;
@@ -1827,7 +1810,7 @@ li {
 
 .calendar .section__title {
   max-width: 724px;
-  margin: 0 auto;
+  margin: 0 auto 92px;
 }
 
 .calendar .hero__text {
@@ -1953,6 +1936,9 @@ li {
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
+  .calendar .section__title {
+    margin-bottom: 45px;
+  }
   .calendar .hero__wrapper {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -2132,6 +2118,11 @@ li {
 }
 
 @media (max-width: 1199px) {
+  .components__wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .components-list:last-child {
     -webkit-box-align: end;
         -ms-flex-align: end;
@@ -2184,6 +2175,11 @@ li {
 }
 
 @media (min-width: 1200px) {
+  .components__wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .components-list:last-child {
     -webkit-box-align: end;
         -ms-flex-align: end;
@@ -2396,7 +2392,7 @@ li {
 }
 
 .review-list__item-discription {
-  max-height: 200px;
+  max-height: 208px;
   margin: 0;
   padding: 30px;
   position: relative;
@@ -2488,31 +2484,23 @@ li {
 }
 
 .review .form__input {
-  width: 100%;
+  margin: 15px 19px 15px 0;
 }
 
-.review .form .input-wrapper {
-  max-width: none;
-  margin-right: 19px;
-}
-
-.review .form .input-wrapper_login {
+.review .form__input_login {
   -ms-flex-preferred-size: 270px;
       flex-basis: 270px;
 }
 
-.review .form .input-wrapper_phone {
+.review .form__input_phone {
   -ms-flex-preferred-size: 270px;
       flex-basis: 270px;
 }
 
-.review .form .input-wrapper_clip {
+.review .form__input_clip {
+  margin-right: 0;
   -ms-flex-preferred-size: 550px;
       flex-basis: 550px;
-}
-
-.review .form .input-wrapper.input-wrapper_clip {
-  margin-right: 0;
 }
 
 .review .form__submit {
@@ -2623,9 +2611,9 @@ li {
   }
 }
 
-@media (min-width: 640px) and (max-width: 1023px) {
-  .review .form .input-wrapper:first-child {
-    margin-right: 19px;
+@media (max-width: 640px) {
+  .review .form .form__input:first-child {
+    margin-right: 0;
   }
 }
 
@@ -2641,16 +2629,18 @@ li {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .review .form .input-wrapper {
+  .review .form__input {
     margin-right: 0;
   }
-  .review .form .input-wrapper_login,
-  .review .form .input-wrapper_phone {
+  .review .form__input_login {
+    margin-right: 15px;
+  }
+  .review .form__input_login, .review .form__input_phone {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
   }
-  .review .form .input-wrapper_clip {
+  .review .form__input_clip {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -3080,13 +3070,15 @@ li {
   left: 10px;
 }
 
-.order .form .input-wrapper_login {
+.order .form .input-wrapper:first-child {
   margin-top: 0;
 }
 
 .order .form .form__input {
   padding: 13px 13px 13px 40px;
   font-size: 12px;
+  background-position: 15px 50%;
+  background-size: 16px;
 }
 
 .order .form .form__submit {

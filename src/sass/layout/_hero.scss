@@ -54,12 +54,13 @@
     border-radius: 100%;
     background-color: $color-attention;
     box-shadow: 0px 0px 0px 6px rgba(244, 230, 208, 1);
+
     &-img {
       width: 24px;
       height: 32px;
     }
   }
-  
+
 
   &__text {
     margin-left: 18px;
@@ -262,24 +263,11 @@
     max-width: 220px;
     margin: 15px 0;
     position: relative;
-
-    &:before {
-      content: "";
-      position: absolute;
-      left: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 27px;
-      height: 27px;
-      background: url("../img/icon-login.svg") 50% no-repeat;
-      z-index: 1;
-    }
   }
 
   &__input {
     max-width: 100%;
     border: 1px solid #f0efef;
-    background-color: #f6f9f8;
     color: #666666;
     font-size: 16px;
     line-height: 18px;
@@ -287,6 +275,7 @@
     padding: 25px 25px 25px 55px;
     border-radius: 32px;
     position: relative;
+    background:#f6f9f8 url("../img/icon-login.svg") 20px 50% no-repeat;
 
     &:hover {
       color: #000000;
@@ -301,7 +290,9 @@
     border: none;
     border-radius: 32px;
     background-color: #ff7000;
-    box-shadow: inset 0 0 4px rgba(247, 207, 123, 0.48), 0px 14px 15px -11px rgba(251, 172, 125, 1);
+    box-shadow: inset 0 0 4px rgba(247, 207, 123, 0.48), 0px 14px 15px -11px rgba(251, 172, 125, 1),
+      0px 3px 0px 0px #ff7000,
+      0px 16px 26px -13px #e7501b;
     color: #ffffff;
     font-size: 28px;
     line-height: 22px;
@@ -340,20 +331,14 @@
   }
 }
 
-.form .input-wrapper_phone:before {
-  background: url("../img/icon-phone-form.svg") 50% no-repeat;
+.form .form__input_phone {
+  background-image: url("../img/icon-phone-form.svg");
 }
 
-.form .input-wrapper_clip {
-  .form__input {
+.form .form__input_clip {
     padding-left: 20px;
-  }
-
-  &:before {
-    left: auto;
-    right: 20px;
-    background: url("../img/icon-clip.svg") 50% no-repeat;
-  }
+    background-image: url("../img/icon-clip.svg");
+    background-position: 90% 50%;
 }
 
 @media (min-width: 1315px) {
