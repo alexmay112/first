@@ -127,6 +127,7 @@
   .components__wrapper {
     justify-content: space-between;
   }
+
   .components-list:last-child {
     align-items: flex-end;
   }
@@ -139,12 +140,8 @@
 }
 
 @media (max-width: 767px) {
-  .components-list {
-    // flex-basis: auto;
-  }
   .components-list:last-child {
     align-items: flex-start;
-    // flex-basis: auto;
   }
 
   .components__wrapper {
@@ -179,6 +176,7 @@
   .components__wrapper {
     justify-content: space-between;
   }
+
   .components-list:last-child {
     align-items: flex-end;
   }

@@ -123,6 +123,7 @@
   .how-list__wrapper {
     flex-direction: column;
   }
+
   .how__term {
     padding: 20px;
     margin: 0;
@@ -133,6 +134,7 @@
   .how-list {
     margin-bottom: 0;
     flex-direction: column;
+
     &__wrapper {
       display: flex;
     }
@@ -163,6 +165,7 @@
     justify-content: space-around;
     background: none;
   }
+
   .how-list__item {
     padding: 0;
   }
