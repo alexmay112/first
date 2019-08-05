@@ -746,6 +746,10 @@ li {
   min-height: 890px;
 }
 
+.hero.hero_last {
+  padding-top: 104px;
+}
+
 @media (max-width: 479px) {
   .section__title {
     font-size: 30px;
