@@ -3222,6 +3222,76 @@ li {
   }
 }
 
+.footer {
+  padding: 53px 0;
+  font-size: 16px;
+  color: #666666;
+}
+
+.footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer-list__item:nth-child(2) {
+  text-align: center;
+}
+
+.footer-list__privacy {
+  color: #666666;
+}
+
+.footer-list__logo-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-list__logo-text {
+  margin-left: 30px;
+}
+
+.footer-list__address {
+  text-align: center;
+}
+
+.footer-list__accounts {
+  text-align: right;
+}
+
+@media (max-width: 639px) {
+  .footer-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-list__item {
+    text-align: center;
+  }
+  .footer-list__logo-box {
+    padding-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 1023px) {
+  .footer-list__item:nth-child(3) {
+    display: none;
+  }
+}
+
 .popup_active {
   display: block;
 }
