@@ -50,4 +50,8 @@ $(document).ready(function () {
     $(this).siblings('.review-list__item-discription').toggleClass('review-list__item-discription_expand');
     $(this).children('.review-list__link-img').toggleClass('review-list__link-img_rotate')
   })
+  $('.slick-arrow').on('click', function (e) {
+    $('.review-list__item-discription').removeClass('review-list__item-discription_expand');
+    $('.review-list__link-img').removeClass('review-list__link-img_rotate')
+  })
 });

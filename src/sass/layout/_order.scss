@@ -78,13 +78,13 @@
         right: -182px;
         top: 0;
         content: "";
-        transform: rotate(-39deg);
-        background: url("../img/arrow-land-.png") 100% 0 no-repeat;
+        transform: rotate(1deg);
+        background: url("../img/arrow-how.png") 0 0 no-repeat;
       }
     }
 
     &:nth-child(2):before {
-      transform: rotate(-19deg);
+      transform: rotate(21deg);
     }
   }
 
@@ -129,11 +129,13 @@
 
   .form__submit {
     min-height: auto;
+    margin: 0;
     padding: 8px 0;
     font-size: 18px;
 
     &-small {
       font-size: 12px;
+      line-height: 17px;
     }
   }
 }

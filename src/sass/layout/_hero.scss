@@ -1,5 +1,9 @@
+.ever-popup-btn:hover {
+  cursor: pointer;
+}
+
 .hero {
-  padding: 30px 0 0;
+  padding: 28px 0 0;
   min-height: 723px;
   background:
     url("../img/promo-man.png") 50% 100% no-repeat,
@@ -20,10 +24,17 @@
   }
 }
 
+.hero.hero_last {
+  .product {
+    top: 350px;
+  }
+}
+
 .hero-features {
   &__title {
     color: #000000;
     font-size: 18px;
+    line-height: 26px;
     position: relative;
 
     &::before {
@@ -63,6 +74,7 @@
 
   &__text {
     margin-left: 18px;
+    line-height: 26px;
   }
 }
 
@@ -72,7 +84,7 @@
     font-size: 60px;
     color: #777777;
     text-transform: uppercase;
-    line-height: 44px;
+    line-height: 30px;
 
     &_accent {
       color: $main-accent-color;
@@ -112,6 +124,7 @@
 
   &__call {
     margin-left: 10px;
+    font-weight: 700;
     color: #000000;
     line-height: 12px;
     border-bottom: 1px solid rgba(0, 0, 0, .2);
@@ -128,10 +141,22 @@
 
 .product {
   min-width: 450px;
+  min-height: 310px;
   position: absolute;
-  left: -428px;
-  bottom: -158px;
-  background: url("../img/grass.png") 100% 93px no-repeat;
+  top: 333px;
+  left: -429px;
+
+  &::before {
+    content: "";
+    width: 181px;
+    height: 193px;
+    right: -26px;
+    bottom: 24px;
+    position: absolute;
+    background: url("../img/grass.png") 50% no-repeat;
+    z-index: 5;
+
+  }
 
   &__discont {
     width: 80px;
@@ -140,30 +165,33 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 105px;
+    right: 85px;
     top: -40px;
     font-size: 32px;
     font-weight: 700;
     color: #ffffff;
     line-height: 18px;
     background: url("../img/bg-discont.svg") no-repeat;
+    z-index: 20;
   }
 
   &__percent {
-    margin-left: -9px;
+    margin-left: -7px;
     font-size: 24px;
     font-weight: 700;
     text-shadow: 0px 0px 4px #FFB400;
   }
 
   &__image {
+    position: absolute;
     max-width: 100%;
+    z-index: 10;
   }
 }
 
 .form {
   max-width: 270px;
-  padding: 0 20px 38px;
+  padding: 0 20px 9px;
   text-align: center;
   background-color: #ffffff;
   border: 5px solid #f8f8f8;
@@ -188,37 +216,41 @@
   }
 
   &__title {
-    margin-top: 11px;
-    font-size: 20px;
+    margin: 11px 0 15px;
+    font-size: 16px;
     color: #000000;
     text-align: center;
+    line-height: 18px;
   }
 
   &__prices {
     display: flex;
+    justify-content: space-between;
   }
 
   &__prices-wrapper {
+    max-width: 90px;
     min-height: 103px;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
-    text-align: center;
+    color: #999999;
 
     &:last-child {
+      max-width: none;
       color: #ffffff;
+      text-align: center;
       background: url("../img/bg-price-new.svg") 50% no-repeat;
     }
   }
 
   &__old-price {
-    color: #999999;
+    margin-bottom: 2px;
     font-size: 13px;
   }
 
   &__old-amount {
-    color: #999999;
     font-size: 34px;
     font-weight: 300;
     position: relative;
@@ -228,23 +260,24 @@
       content: "";
       position: absolute;
       height: 1px;
-      width: 100px;
+      width: 87px;
       top: 19px;
-      left: 5px;
+      left: 7px;
       display: block;
       background-color: #d0230c;
     }
 
     &:before {
-      transform: rotate(10deg);
+      transform: rotate(16deg);
     }
 
     &:after {
-      transform: rotate(-10deg);
+      transform: rotate(-16deg);
     }
   }
 
   &__new-price {
+    margin-bottom: 2px;
     font-size: 13px;
   }
 
@@ -274,7 +307,7 @@
     font-size: 16px;
     line-height: 18px;
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.04);
-    padding: 25px 25px 25px 55px;
+    padding: 23px 25px 23px 55px;
     border-radius: 32px;
     position: relative;
     background: #f6f9f8 url("../img/icon-login.svg") 20px 50% no-repeat;
@@ -288,13 +321,19 @@
   &__submit {
     min-height: 65px;
     width: 100%;
+    margin: 7px 0 8px;
     padding: 10px 45px;
     border: none;
     border-radius: 32px;
     background-color: #ff7000;
-    box-shadow: inset 0 0 4px rgba(247, 207, 123, 0.48), 0px 14px 15px -11px rgba(251, 172, 125, 1),
+    background-image: linear-gradient(to top, #ff8900, transparent);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    border: 1px solid #ff8900;
+    box-shadow:
       0px 3px 0px 0px #ff7000,
-      0px 16px 26px -13px #e7501b;
+      0px 10px 26px -13px #e7501b;
     color: #ffffff;
     font-size: 28px;
     line-height: 22px;
@@ -302,7 +341,7 @@
 
     &-small {
       display: block;
-      line-height: 18px;
+      line-height: 20px;
       font-size: 17px;
     }
 
@@ -310,7 +349,10 @@
     &:focus {
       cursor: pointer;
       outline: none;
-      background-image: linear-gradient(to right, #ffb400 0%, #ff6000 100%);
+      background-image:
+        linear-gradient(to top, #ff8900, transparent),
+        linear-gradient(to right, #ffb400, #ff6000);
+      background-size: 100% 3px, auto;
     }
   }
 

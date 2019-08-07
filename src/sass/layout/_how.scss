@@ -9,7 +9,7 @@
   }
 
   &__individual {
-    margin-bottom: 30px;
+    margin-bottom: 45px;
     font-size: 18px;
     font-style: italic;
     line-height: 20px;
@@ -43,11 +43,11 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  background: url("../img/arrow-land-.png") 50% 0 no-repeat;
+  background: url("../img/arrow-land-.png") 50% 31px no-repeat;
 
   &__item {
     max-width: 370px;
-    padding: 110px 0; // for IE
+    padding: 140px 0; // for IE
     display: flex;
     align-items: center;
   }

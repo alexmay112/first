@@ -1,6 +1,10 @@
 .doctor {
-  background: url("../img/bg-doctor.png") 50% no-repeat;
-  background-size: cover;
+  
+  .container {
+    background: url("../img/bg-doctor.png") -370px 0 no-repeat;
+    background-size: auto;
+
+  }
 
   .section__title {
     max-width: 892px;

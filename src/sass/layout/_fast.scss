@@ -3,7 +3,7 @@
   background-size: cover;
 
   .container {
-    padding: 100px 10px;
+    padding: 88px 10px;
     background: url("../img/bg-circles.png") 100% 0 no-repeat;
     background-size: contain;
   }
@@ -30,6 +30,7 @@
     max-width: 500px;
     margin: 36px 0;
     font-size: 18px;
+    line-height: 28px;
   }
 
   &__button.form__submit {
@@ -38,7 +39,7 @@
 
   &__people {
     position: absolute;
-    right: 0;
+    right: 74px;
     bottom: 0;
 
     &-photo {

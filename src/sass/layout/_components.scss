@@ -31,12 +31,17 @@
     }
 
     .components-list__discription {
+      margin-bottom: 0;
       text-align: left;
     }
   }
 
   &__item {
     max-width: 375px;
+
+    &:first-child {
+      margin-bottom: 40px;
+    }
 
     &:hover {
       cursor: pointer;
@@ -77,6 +82,7 @@
   }
 
   &__discription {
+    margin-bottom: 0;
     font-size: 18px;
     text-align: right;
   }
@@ -177,7 +183,7 @@
     justify-content: space-between;
   }
 
-  .components-list:last-child {
-    align-items: flex-end;
-  }
+  // .components-list:last-child {
+  //   align-items: flex-end;
+  // }
 }

@@ -1,7 +1,7 @@
 .calendar {
   .section__title {
     max-width: 727px;
-    margin: 0 auto 92px;
+    margin: 0 auto 47px;
   }
 
   .hero__text {
@@ -17,8 +17,10 @@
 
   .hero-features__item {
     max-width: none;
-    margin-bottom: 37px;
     align-items: flex-start;
+    &:not(:last-child) {
+      margin-bottom: 37px;
+    }
   }
 
   .hero-features__item-title {
@@ -30,8 +32,8 @@
   }
 
   .hero-features__text {
-    margin: 0 0 0 18px;
-    line-height: 30px;
+    margin: 6px 0 0 18px;
+    line-height: 23px;
   }
 
   .product {
