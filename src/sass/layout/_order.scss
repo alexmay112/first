@@ -21,6 +21,7 @@
 
   &__discription {
     margin-top: 0;
+    margin-bottom: 0;
     font-size: 18px;
     line-height: 24px;
   }
@@ -58,7 +59,7 @@
   }
 
   &-item {
-    max-width: 236px;
+    max-width: 238px;
     min-height: 178px;
     display: inline-block;
     text-align: center;
@@ -135,6 +136,7 @@
 
     &-small {
       font-size: 12px;
+      margin-top: -4px;
       line-height: 17px;
     }
   }
@@ -146,17 +148,24 @@
     justify-content: space-around;
 
     &-item {
-
+      margin-bottom: 30px;
+      
       &:first-child,
       &:last-child {
         padding-top: 0;
       }
     }
   }
+
 }
 
 @media (max-width: 1023px) {
   .order__list-item {
+
+    &:first-child,
+    &:last-child {
+      padding-top: 0;
+    }
 
     &:first-child,
     &:nth-child(2) {
@@ -169,6 +178,7 @@
 
 @media (max-width: 1199px) {
   .order__list-item {
+
     &:first-child,
     &:nth-child(2) {
       &:before {

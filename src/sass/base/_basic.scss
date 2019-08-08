@@ -11,12 +11,18 @@ input {
   outline: none;
 }
 
+input::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 a {
   display: inline-block;
   text-decoration: none;
   outline: none;
 
   &:hover {
+    text-decoration: none;
     transition: 0.3s;
   }
 }
@@ -57,4 +63,5 @@ li {
 
 .color-attention {
   color: $color-attention;
+  font-weight: 700;
 }

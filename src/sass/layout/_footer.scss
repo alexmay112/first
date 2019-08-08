@@ -1,74 +1,27 @@
+.footer {
+  padding: 68px 0 50px;
+  color: #666666;
+}
 
+.rom__img {
+  width: 54px;
+  height: auto;
+}
+.rom__svg {
+  fill: $main-accent-color;
+}
 
+.rom__link {
+  margin-bottom: 8px;
+  color: #666666;
 
+  &:hover {
+    text-decoration: none;
+  }
+}
 
-
-// .footer {
-//   padding: 53px 0;
-//   font-size: 16px;
-//   color: #666666;
-// }
-
-// .footer-list {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   flex-wrap: wrap;
-
-//   &__product {
-//     margin-bottom: 8px;
-//     display: block;
-//   }
-
-//   &__account-inn {
-//     margin-bottom: 8px;
-//     display: block;
-//   }
-
-//   &__item:nth-child(2) {
-//     text-align: center;
-//   }
-
-//   &__privacy {
-//     color: #666666;
-//   }
-
-//   &__logo-box {
-//     display: flex;
-//     align-items: center;
-//   }
-
-//   &__logo-text {
-//     margin-left: 30px;
-//   }
-
-//   &__address {
-//     margin: 8px 0 0;
-//     text-align: center;
-//   }
-
-//   &__accounts {
-//     text-align: right;
-//   }
-// }
-
-// @media (max-width: 639px) {
-//   .footer-list {
-//     flex-direction: column;
-//   }
-
-//   .footer-list__item {
-//     text-align: center;
-//   }
-
-//   .footer-list__logo-box {
-//     padding-bottom: 30px;
-//     justify-content: center;
-//   }
-// }
-
-// @media (max-width: 1023px) {
-//   .footer-list__item:nth-child(3) {
-//     display: none;
-//   }
-// }
+.rom__right {
+  .rom__text:first-child {
+    margin-bottom: 8px;
+  }
+}

@@ -23,6 +23,15 @@
     flex-basis: 50%;
   }
 
+  &__image {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__text {
+    padding-bottom: 80px;
+  }
+
   &__photo {
     max-width: 100%;
     display: block;
@@ -77,11 +86,12 @@
   &__name {
     margin: 0;
     font-size: 24px;
+    color: #000000;
     font-weight: 700;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .doctor {
     background: none;
   }

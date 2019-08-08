@@ -6,6 +6,7 @@
     line-height: 28px;
     color: #000000;
   }
+
   &__footer-text {
     margin: 0 0 25px;
   }
@@ -34,11 +35,12 @@
 
   &__item {
     max-width: 270px;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
   }
 
   &__item-image {
     display: block;
+    max-width: 100%;
   }
 
   &__item-wrapper {
@@ -100,9 +102,30 @@
   margin-bottom: 11px;
 }
 
+@media (max-width: 639px) {
+  .reasons .reasons-list__item {
+    max-width: 270px;
+  }
+}
+
 @media (max-width: 767px) {
   .reasons-list__item {
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .reasons-list__item {
+    max-width: 236px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .reasons-list__item {
+    max-width: 236px;
+  }
+  .attention {
+    margin-bottom: 0;
   }
 }
 

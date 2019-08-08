@@ -29,6 +29,7 @@
     border-radius: 0px 10px 10px 0px;
   }
 
+
   // &__close {
   //   width: 20px;
   //   height: 20px;
@@ -73,6 +74,8 @@
 
     &__submit {
       max-width: 220px;
+      display: block;
+      margin: 7px auto 8px;
     }
 
     .input-wrapper {
@@ -92,6 +95,26 @@
   position: relative;
   background-color: #f3f9f8;
 }
+
+.ever-popup__inner {
+  padding-top: 0 !important;
+}
+
+.ever-popup__close {
+  width: 18px !important;
+  height: 18px !important;
+  right: 5px !important;
+  top: 6px !important;
+}
+
+.ever-popup__close::after,
+.ever-popup__close::before {
+  width: 22px !important;
+  height: 3px !important;
+  border-radius: 1px !important;
+  background-color: #d8e1e5 !important;
+}
+
 
 @media (max-width: 479px) {
 
