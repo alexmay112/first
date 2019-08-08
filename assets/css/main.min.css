@@ -1820,8 +1820,6 @@ li {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 35px;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
   border-radius: 5px;
   background-color: #ffffff;
   border: 5px solid #f8f8f8;
@@ -1835,10 +1833,15 @@ li {
 .weekly-list__item {
   width: 235px;
   background-color: #fff;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
 }
 
 .weekly-list__item:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  border-radius: 5px;
   -webkit-transition: .2s;
   transition: .2s;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
@@ -2060,6 +2063,12 @@ li {
     bottom: -30px;
     right: -7px;
   }
+}
+
+.draggable {
+  padding: 10px 0;
+  background-color: #fa2a2a;
+  border-radius: 0px 5px 5px 0px;
 }
 
 @media (max-width: 1199px) {
