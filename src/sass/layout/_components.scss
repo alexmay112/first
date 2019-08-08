@@ -38,6 +38,7 @@
 
   &__item {
     max-width: 375px;
+    min-height: 181px;
 
     &:first-child {
       margin-bottom: 40px;
@@ -91,19 +92,19 @@
 @media (max-width: 1023px) {
 
   .components__wrapper {
-    flex-direction: column;
+    // flex-direction: column;
     padding-bottom: 0;
   }
 
   .components-list {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
 
   .components-list,
   .components-list:last-child .components-list {
     &__item {
-      width: 38%;
+      // width: 38%;
     }
 
     &__header {
@@ -131,21 +132,40 @@
 @media (max-width: 1199px) {
 
   .components__wrapper {
+    padding-bottom: 50px;
     justify-content: space-between;
+
   }
 
   .components-list:last-child {
-    align-items: flex-end;
+    align-items: flex-start;
   }
 }
 
 @media (max-width: 1023px) {
+  .components-list {
+    width: 32%;
+    justify-content: flex-start;
+  }
+
+  .components-list__item {
+    min-height: 334px;
+  }
+
   .components-list:last-child {
     align-items: flex-start;
   }
 }
 
 @media (max-width: 767px) {
+  .components-list {
+    width: auto;
+  }
+
+  .components-list__item {
+    min-height: 295px;
+  }
+
   .components-list:last-child {
     align-items: flex-start;
   }
@@ -157,12 +177,46 @@
   .components-list,
   .components-list:last-child .components-list {
     &__item {
-      width: 50%;
+      // width: 50%;
     }
   }
 }
 
+@media (max-width: 639px) {
+  .components-list {
+    width: 50%;
+  }
+
+  .components-list__item {
+    min-height: 370px;
+  }
+
+  .components-list .components-list__item:first-child {
+    margin-bottom: 15px;
+  }
+
+  .components-list__item:first-child {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 479px) {
+
+  .components__wrapper {
+    flex-direction: column;
+  }
+  .components-list {
+    width: auto;
+  }
+  .components-list__item {
+    min-height: auto;
+    margin-bottom: 15px;
+  }
+
+  .components-list:last-child .components-list__item:last-child {
+    margin-bottom: 0;
+  }
+
   .components-list {
     justify-content: space-around;
   }
@@ -182,8 +236,4 @@
   .components__wrapper {
     justify-content: space-between;
   }
-
-  // .components-list:last-child {
-  //   align-items: flex-end;
-  // }
 }

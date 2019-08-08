@@ -1,5 +1,5 @@
 .doctor {
-  
+
   .container {
     background: url("../img/bg-doctor.png") -370px 0 no-repeat;
     background-size: auto;
@@ -88,6 +88,16 @@
     font-size: 24px;
     color: #000000;
     font-weight: 700;
+  }
+}
+
+@media (max-width: 1199px) {
+  .doctor__photo {
+    max-height: 588px;
+  }
+
+  .doctor__text {
+    padding-bottom: 50px;
   }
 }
 

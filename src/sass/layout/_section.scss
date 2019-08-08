@@ -39,7 +39,53 @@
   padding-top: 104px;
 }
 
-@media (max-width: 639px) {}
+@media (max-width: 1199px) {
+  .section {
+    padding: 50px 0;
+  }
+
+  .review.section {
+    padding-bottom: 80px;
+  }
+
+  .hero.hero_last {
+    padding: 50px 0;
+  }
+  .components__wrapper {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .how.section {
+    padding: 40px 0;
+  }
+
+  .how .section__title {
+    margin-bottom: 25px;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .review.section {
+    padding-bottom: 70px;
+  }
+
+  .hero.hero_last {
+    padding: 40px 0;
+  }
+  .components__wrapper {
+    padding-bottom: 40px;
+  }
+
+
+
+  .section__title {
+    margin-bottom: 10px;
+  }
+}
 
 @media (max-width: 767px) {
   .how.section {
@@ -49,6 +95,18 @@
   .section {
     padding: 35px 0;
   }
+
+  .review.section {
+    padding-bottom: 65px;
+  }
+
+  .hero.hero_last {
+    padding: 35px 0;
+  }
+  .components__wrapper {
+    padding-bottom: 35px;
+  }
+
 
   .section__title {
     font-size: 35px;
@@ -65,34 +123,21 @@
     padding: 30px 0;
   }
 
+  .review.section {
+    padding-bottom: 60px;
+  }
+
+  .hero.hero_last {
+    padding: 30px 0;
+  }
+
+  .components__wrapper {
+    padding-bottom: 30px;
+  }
+
   .section__title,
   .fast .fast__title {
     font-size: 30px;
     line-height: 30px;
-  }
-
-}
-
-@media (max-width: 1023px) {
-  .how.section {
-    padding: 40px 0;
-  }
-
-  .how .section__title {
-    margin-bottom: 25px;
-  }
-
-  .section {
-    padding: 40px 0;
-  }
-
-  .section__title {
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .section {
-    padding: 50px 0;
   }
 }

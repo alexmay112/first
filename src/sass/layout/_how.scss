@@ -26,6 +26,7 @@
   }
 
   &__term {
+    margin-bottom: 0;
     padding: 20px 140px;
     border-radius: 7px;
     color: #000000;
@@ -140,43 +141,33 @@
   }
 }
 
-@media (max-width: 767px) {
-  .how-list__wrapper {
-    flex-direction: column;
+@media (max-width: 1199px) {
+  .how-list {
+    min-height: 150px;
+    justify-content: space-around;
+    background: none;
   }
 
-  .how__term {
-    padding: 20px;
-    margin: 0;
+  .how-list__item {
+    padding: 0;
   }
 
-  .how.section .product {
-    height: 310px;
-    &:before {
-      display: none;
+  .how .product {
+    height: 247px;
+    margin: 0 auto;
+    position: static;
+    transform: translate(0);
+
+    &::before {
+      top: 31px;
+      left: 233px;
     }
 
     &__image {
-      position: static;
+      left: 55px;
     }
   }
 }
-
-@media (max-width: 479px) {
-  .how.section .product {
-    height: 240px;
-    &:before {
-      // display: block;
-      left: 0;
-      top: 93px;
-    }
-
-    &__image {
-      left: 0;
-    }
-  }
-}
-
 
 @media (max-width: 1023px) {
   .how-list {
@@ -211,32 +202,51 @@
       display: none;
     }
   }
+
+  .how .product__image {
+    left: 24px;
+  }
 }
 
-@media (max-width: 1199px) {
-  .how-list {
-    min-height: 150px;
-    justify-content: space-around;
-    background: none;
+@media (max-width: 767px) {
+  .how-list__wrapper {
+    flex-direction: column;
   }
 
-  .how-list__item {
-    padding: 0;
+  .how__term {
+    padding: 20px;
+    margin: 0;
   }
 
-  .how .product {
-    height: 247px;
-    margin: 0 auto;
-    position: static;
-    transform: translate(0);
+  .how.section .product {
+    height: 310px;
 
-    &::before {
-      top: 31px;
-      left: 233px;
+    &:before {
+      display: none;
     }
 
     &__image {
-      left: 55px;
+      position: static;
     }
+  }
+}
+
+@media (max-width: 479px) {
+  .how.section .product {
+    height: 240px;
+
+    &:before {
+      left: 0;
+      top: 93px;
+    }
+
+    &__image {
+      left: 0;
+    }
+  }
+
+  .how .product__image {
+    width: 300px;
+    max-width: none;
   }
 }

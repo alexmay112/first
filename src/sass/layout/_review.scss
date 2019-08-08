@@ -17,7 +17,7 @@
 }
 
 .review-list {
-  margin-bottom: 68px;
+  margin-bottom: 30px;
 
   &__item {
     width: 370px;
@@ -151,7 +151,7 @@
 
 .review .form {
   max-width: none;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
   display: flex;
   border: none;
   justify-content: center;
@@ -313,6 +313,16 @@
   }
 }
 
+@media (max-width: 1199px) {
+  .review-list {
+    margin-bottom: 30px;
+  }
+
+  .review-list__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 1023px) {
   .review .form {
     max-width: none;
@@ -336,15 +346,5 @@
     &__input_text-wrapper {
       flex-basis: 100%;
     }
-  }
-
-  .review-list {
-    margin-bottom: 0;
-  }
-}
-
-@media (max-width: 1199px) {
-  .review-list__item:not(:last-child) {
-    margin-bottom: 70px;
   }
 }

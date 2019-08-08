@@ -48,20 +48,36 @@
   }
 }
 
-@media (mix-width: 320px) and (max-width: 350px) {
-  .fast .container {
-    text-align: center;
+@media (max-width: 1199px) {
+  .fast__discription {
+    max-width: 450px;
   }
 }
 
-@media (mix-width: 351px) and (max-width: 639px) {
+@media (max-width: 1023px) {
   .fast .container {
+    padding: 40px 10px;
+    background: none;
     text-align: center;
+  }
+
+  .fast__title {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  .fast__discription {
+    margin: 36px auto;
+  }
+
+  .fast__people {
+    display: none;
   }
 }
 
 @media (max-width: 767px) {
   .fast .container {
+    padding: 35px 10px;
     background: none;
   }
 
@@ -75,13 +91,15 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  .fast .container {
-    background: url("../img/bg-circles.png") 50% 0 no-repeat;
-    background-size: contain;
-  }
 
-  .fast__people {
-    display: none;
+@media (max-width: 639px) {
+  .fast .container {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .fast .container {
+    padding: 30px 10px;
   }
 }

@@ -1,22 +1,11 @@
-.popup_active {
-  display: block;
-}
+// .popup_active {
+//   display: block;
+// }
 
 .popup {
-  // display: none;
-  // padding: 10px 50px;
-  // position: fixed;
-  // left: 0;
-  // top: 0;
-  // width: 100%;
-  // height: 100%;
-  // justify-content: center;
-  // align-items: center;
-  // background-color: rgba(0, 0, 0, 0.5);
-  // z-index: 998;
 
   &__product {
-    width: 422px;
+    width: 430px;
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -29,47 +18,38 @@
     border-radius: 0px 10px 10px 0px;
   }
 
-
-  // &__close {
-  //   width: 20px;
-  //   height: 20px;
-  //   display: flex;
-  //   align-items: center;
-  //   position: absolute;
-  //   top: 5px;
-  //   right: 5px;
-  //   transform: rotate(45deg);
-  //   color: #d8e1e5;
-  //   font-size: 35px;
-
-  //   &:hover {
-  //     cursor: pointer;
-  //   }
-  // }
-
   .product {
     min-width: auto;
+    height: 257px;
     position: relative;
     left: 0;
     top: 0;
     text-align: center;
     background: none;
 
+    &:before {
+      left: 240px;
+      top: 47px;
+    }
+
     &__discont {
       position: absolute;
       top: -36px;
-      right: 70px;
+      left: 251px;
       color: #000;
+      background: url("../img/bg-discont-grad.svg") 50% no-repeat;
     }
 
     &__image {
-      max-width: 100%;
+      max-width: 370px;
+      left: 18px;
     }
   }
 
   .form {
     max-width: none;
-    border: 1px solid #f3f9f8;
+    // border: 1px solid #f3f9f8;
+    border: none;
     border-radius: 0;
 
     &__submit {
@@ -103,13 +83,13 @@
 .ever-popup__close {
   width: 18px !important;
   height: 18px !important;
-  right: 5px !important;
+  right: 7px !important;
   top: 6px !important;
 }
 
 .ever-popup__close::after,
 .ever-popup__close::before {
-  width: 22px !important;
+  width: 18px !important;
   height: 3px !important;
   border-radius: 1px !important;
   background-color: #d8e1e5 !important;
@@ -132,6 +112,15 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .popup__form {
+    width: 240px;
+  }
+
+  .ever-popup__close {
+    right: 3px !important;
+  }
+  
 }
 
 @media (max-width: 735px) {
@@ -163,7 +152,7 @@
     transform: translateY(0);
 
     &__image {
-      max-width: 100%;
+      // max-width: 100%;
     }
   }
 }
