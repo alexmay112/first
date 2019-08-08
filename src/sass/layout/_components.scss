@@ -92,7 +92,6 @@
 @media (max-width: 1023px) {
 
   .components__wrapper {
-    // flex-direction: column;
     padding-bottom: 0;
   }
 
@@ -103,9 +102,6 @@
 
   .components-list,
   .components-list:last-child .components-list {
-    &__item {
-      // width: 38%;
-    }
 
     &__header {
       flex-direction: column;
@@ -134,7 +130,6 @@
   .components__wrapper {
     padding-bottom: 50px;
     justify-content: space-between;
-
   }
 
   .components-list:last-child {
@@ -173,13 +168,6 @@
   .components__wrapper {
     background: none;
   }
-
-  .components-list,
-  .components-list:last-child .components-list {
-    &__item {
-      // width: 50%;
-    }
-  }
 }
 
 @media (max-width: 639px) {
@@ -200,14 +188,22 @@
   }
 }
 
+@media (min-width: 480px) and (max-width: 639px) {
+  .components__wrapper {
+    padding-bottom: 0;
+  }
+}
+
 @media (max-width: 479px) {
 
   .components__wrapper {
     flex-direction: column;
   }
+
   .components-list {
     width: auto;
   }
+
   .components-list__item {
     min-height: auto;
     margin-bottom: 15px;

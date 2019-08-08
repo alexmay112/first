@@ -3,7 +3,6 @@
   .container {
     background: url("../img/bg-doctor.png") -370px 0 no-repeat;
     background-size: auto;
-
   }
 
   .section__title {
@@ -91,6 +90,14 @@
   }
 }
 
+@media (min-width: 1200px) {
+
+  .doctor__text,
+  .doctor__image {
+    width: 50%;
+  }
+}
+
 @media (max-width: 1199px) {
   .doctor__photo {
     max-height: 588px;
@@ -101,8 +108,20 @@
   }
 }
 
+
+@media (min-width: 1024px) {
+
+  .doctor.section {
+    padding-bottom: 0;
+  }
+
+  .doctor__wrapper {
+    flex-wrap: nowrap;
+  }
+}
+
 @media (max-width: 767px) {
-  .doctor {
+  .doctor .container {
     background: none;
   }
 
@@ -120,21 +139,3 @@
   }
 }
 
-@media (min-width: 1024px) {
-
-  .doctor.section {
-    padding-bottom: 0;
-  }
-
-  .doctor__wrapper {
-    flex-wrap: nowrap;
-  }
-}
-
-@media (min-width: 1200px) {
-
-  .doctor__text,
-  .doctor__image {
-    width: 50%;
-  }
-}
