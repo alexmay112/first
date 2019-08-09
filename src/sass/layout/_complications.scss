@@ -27,13 +27,13 @@
 }
 
 .weekly-list {
+
   &__wrapper {
     display: flex;
     margin-bottom: 35px;
     // box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
-    border-radius: 5px;
-    background-color: #ffffff;
-    border: 5px solid #f8f8f8;
+    // border-radius: 5px;
+    // border: 5px solid #f8f8f8;
   }
 
   .slick-prev::before,
@@ -45,22 +45,64 @@
     width: 235px;
     background-color: #fff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+    border: 5px solid #f8f8f8;
+    border-left: none;
+    border-right: none;
+    position: relative;
 
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 15px;
+      background-color: #fff;
+      display: none;
+      // border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    &:before {
+      top: -15px;
+      border-radius: 5px 5px 0 0;
+      border-bottom: 1px solid transparent;
+    }
+
+    &:after {
+      border-radius: 0 0 5px 5px;
+      bottom: -15px;
+      border-top: 1px solid transparent;
+    }
 
     &:hover {
       cursor: pointer;
-      transform: scale(1.02);
-      border-radius: 5px;
+      // border-radius: 5px;
+      transform: scale(1.01);
       transition: .2s;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+      z-index: 100;
+
+      &::before,
+      &::after {
+        display: block;
+      }
+      .weekly-list__title, .weekly-list__count, .weekly-list__discription {
+        border-right: none;
+      }
     }
   }
 
   &__header {
     max-width: 265px;
+    margin: 20px 0;
     text-align: left;
     font-size: 19px;
     font-weight: 700;
+    border-radius: 5px 0px 0px 5px;
+    border: 5px solid #f8f8f8;
+    border-right: none;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+
 
     &-title,
     &-count,
@@ -267,8 +309,8 @@
 }
 
 .draggable {
-  padding: 10px 0;
-  background-color: #fa2a2a;
+  padding: 20px 0;
+  // background-color: #fa2a2a;
   border-radius: 0px 5px 5px 0px;
 }
 

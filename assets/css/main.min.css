@@ -1820,9 +1820,6 @@ li {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 35px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  border: 5px solid #f8f8f8;
 }
 
 .weekly-list .slick-prev::before,
@@ -1835,24 +1832,64 @@ li {
   background-color: #fff;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+  border: 5px solid #f8f8f8;
+  border-left: none;
+  border-right: none;
+  position: relative;
+}
+
+.weekly-list__item:before, .weekly-list__item:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  background-color: #fff;
+  display: none;
+}
+
+.weekly-list__item:before {
+  top: -15px;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid transparent;
+}
+
+.weekly-list__item:after {
+  border-radius: 0 0 5px 5px;
+  bottom: -15px;
+  border-top: 1px solid transparent;
 }
 
 .weekly-list__item:hover {
   cursor: pointer;
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  border-radius: 5px;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
   -webkit-transition: .2s;
   transition: .2s;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+  z-index: 100;
+}
+
+.weekly-list__item:hover::before, .weekly-list__item:hover::after {
+  display: block;
+}
+
+.weekly-list__item:hover .weekly-list__title, .weekly-list__item:hover .weekly-list__count, .weekly-list__item:hover .weekly-list__discription {
+  border-right: none;
 }
 
 .weekly-list__header {
   max-width: 265px;
+  margin: 20px 0;
   text-align: left;
   font-size: 19px;
   font-weight: 700;
+  border-radius: 5px 0px 0px 5px;
+  border: 5px solid #f8f8f8;
+  border-right: none;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
 }
 
 .weekly-list__header-title, .weekly-list__header-count, .weekly-list__header-discription {
@@ -2066,8 +2103,7 @@ li {
 }
 
 .draggable {
-  padding: 10px 0;
-  background-color: #fa2a2a;
+  padding: 20px 0;
   border-radius: 0px 5px 5px 0px;
 }
 
