@@ -5,7 +5,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     infinite: false,
     responsive: [{
-        breakpoint: 1201,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 3,
         }

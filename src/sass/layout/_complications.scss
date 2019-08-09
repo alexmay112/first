@@ -78,6 +78,7 @@
       // border-radius: 5px;
       transform: scale(1.01);
       transition: .2s;
+
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
       z-index: 100;
 
@@ -88,6 +89,9 @@
       .weekly-list__title, .weekly-list__count, .weekly-list__discription {
         border-right: none;
       }
+
+      // box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+
     }
   }
 
@@ -278,6 +282,18 @@
   }
 }
 
+@media (max-width: 1023px) {
+  .weekly-list__discription, .weekly-list__header-discription {
+    height: 150px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 648px) {
+  .weekly-list__discription, .weekly-list__header-discription {
+    height: 112px;
+  }
+}
+
 @media (max-width: 479px) {
   .weekly-list__header {
     font-size: 16px;
@@ -308,13 +324,26 @@
   }
 }
 
+
 .draggable {
   padding: 20px 0;
   // background-color: #fa2a2a;
   border-radius: 0px 5px 5px 0px;
+
+@media (max-width: 479px) {
+  .complications .slick-prev {
+    left: -126px;
+  }
+
 }
 
 // media for complications slider
+@media (max-width: 9999px) {
+  .complications .weekly-list {
+    max-width: none;
+  }
+}
+
 @media (max-width: 1199px) {
   .complications .weekly-list {
     max-width: 744px;
