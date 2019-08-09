@@ -1229,8 +1229,10 @@ li {
   background-repeat: no-repeat;
   background-size: 100% 3px;
   border: 1px solid #ff8900;
-  -webkit-box-shadow: 0px 3px 0px 0px #ff7000, 0px 10px 26px -13px #e7501b;
-          box-shadow: 0px 3px 0px 0px #ff7000, 0px 10px 26px -13px #e7501b;
+  -webkit-box-shadow: 0px 3px 0px 0px #ff7000,
+ 0px 10px 26px -13px #e7501b;
+          box-shadow: 0px 3px 0px 0px #ff7000,
+ 0px 10px 26px -13px #e7501b;
   color: #ffffff;
   font-size: 28px;
   line-height: 22px;
@@ -1813,11 +1815,6 @@ li {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 35px;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
-  border-radius: 5px;
-  background-color: #ffffff;
-  border: 5px solid #f8f8f8;
 }
 
 .weekly-list .slick-prev::before,
@@ -1828,19 +1825,68 @@ li {
 .weekly-list__item {
   width: 235px;
   background-color: #fff;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+  border: 5px solid #f8f8f8;
+  border-left: none;
+  border-right: none;
+  position: relative;
+}
+
+.weekly-list__item:before, .weekly-list__item:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  background-color: #fff;
+  display: none;
+}
+
+.weekly-list__item:before {
+  top: -15px;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid transparent;
+}
+
+.weekly-list__item:after {
+  border-radius: 0 0 5px 5px;
+  bottom: -15px;
+  border-top: 1px solid transparent;
 }
 
 .weekly-list__item:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
   -webkit-transition: .2s;
   transition: .2s;
+
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+  z-index: 100;
+}
+
+.weekly-list__item:hover::before, .weekly-list__item:hover::after {
+  display: block;
+}
+
+.weekly-list__item:hover .weekly-list__title, .weekly-list__item:hover .weekly-list__count, .weekly-list__item:hover .weekly-list__discription {
+  border-right: none;
+
 }
 
 .weekly-list__header {
   max-width: 265px;
+  margin: 20px 0;
   text-align: left;
   font-size: 19px;
   font-weight: 700;
+  border-radius: 5px 0px 0px 5px;
+  border: 5px solid #f8f8f8;
+  border-right: none;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
 }
 
 .weekly-list__header-title, .weekly-list__header-count, .weekly-list__header-discription {
@@ -2065,6 +2111,11 @@ li {
   }
 }
 
+
+.draggable {
+  padding: 20px 0;
+  border-radius: 0px 5px 5px 0px;
+
 @media (max-width: 479px) {
   .complications .slick-prev {
     left: -126px;
@@ -2075,6 +2126,7 @@ li {
   .complications .weekly-list {
     max-width: none;
   }
+
 }
 
 @media (max-width: 1199px) {
