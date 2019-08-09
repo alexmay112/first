@@ -39,9 +39,11 @@
 
   .product {
     position: absolute;
-    left: -465px;
-    top: 57%;
-    transform: translateY(-50%);
+    // left: -465px;
+    left: 50%;
+    // top: 57%;
+    top: 41%;
+    transform: translateX(-167px);
   }
 
   .product__discont {
@@ -224,7 +226,7 @@
 @media (min-width: 1200px) {
   .calendar {
     .product {
-      left: -502px;
+      // left: -502px;
     }
   }
 }

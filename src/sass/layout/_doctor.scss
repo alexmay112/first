@@ -91,6 +91,9 @@
 }
 
 @media (min-width: 1200px) {
+  .doctor__text {
+    padding-right: 90px;
+  }
 
   .doctor__text,
   .doctor__image {
@@ -138,4 +141,3 @@
     flex-basis: auto; //for IE
   }
 }
-
