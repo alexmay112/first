@@ -3076,8 +3076,8 @@ li {
   .review-list {
     margin-bottom: 30px;
   }
-  .review-list__item:not(:last-child) {
-    margin-bottom: 0;
+  .review-list__item {
+    margin-bottom: 21px;
   }
 }
 
