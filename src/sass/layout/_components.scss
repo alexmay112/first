@@ -231,6 +231,113 @@
   }
 }
 
+@media (max-width: 1199px) {
+
+  .components__wrapper {
+    padding-bottom: 50px;
+    justify-content: space-between;
+  }
+
+  .components-list:last-child {
+    align-items: flex-start;
+  }
+
+  .components-list__item_serenoa {
+    // &::before {
+    //   //horizontal line
+    //   right: -34px;
+    // }
+
+    &::after {
+      //diagonal line
+      width: 257px;
+      // height: 1px;
+      right: -291px;
+      transform: rotate(67deg);
+    }
+
+    .components-list__header {
+      &::before {
+        //dot
+        right: -137px;
+        bottom: -183px;
+      }
+    }
+  }
+
+  .components-list__item_horsetail {
+    &::before {
+      //horizontal line
+      right: -34px;
+    }
+
+    &::after {
+      //diagonal line
+      width: 104px;
+      right: -136px;
+      transform: rotate(10deg);
+    }
+
+    .components-list__header {
+      &::before {
+        //dot
+        right: -137px;
+        bottom: 35px;
+      }
+    }
+  }
+
+  // lines and dots for 2nd list
+  .components-list:last-child {
+    .components-list__item_orthosiphon {
+      &::before {
+        //horizontal line
+        left: -34px;
+      }
+
+      &::after {
+        //diagonal line
+        width: 276px;
+        left: -127px;
+        transform: rotate(-70deg);
+        top: 317px;
+      }
+
+      .components-list__header {
+        &::before {
+          //dot
+          left: -129px;
+          bottom: -198px;
+        }
+      }
+    }
+
+    .components-list__item_goldenrod {
+      &::before {
+        //horizontal line
+        left: -34px;
+      }
+
+      &::after {
+        //diagonal line
+        width: 166px;
+        height: 1px;
+        left: -169px;
+        transform: rotate(36deg);
+        top: -39px;
+      }
+
+      .components-list__header {
+        &::before {
+          //dot
+          left: -173px;
+          bottom: 151px;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1023px) {
 
   .components__wrapper {
@@ -265,19 +372,105 @@
       text-align: center;
     }
   }
-}
 
-@media (max-width: 1199px) {
+  .components-list__item_serenoa {
+    &::before {
+      //horizontal line
+      right: 28px;
+    }
 
-  .components__wrapper {
-    padding-bottom: 50px;
-    justify-content: space-between;
+    &::after {
+      //diagonal line
+      width: 426px;
+      right: -397px;
+      transform: rotate(68deg);
+    }
+
+    .components-list__header {
+      &::before {
+        //dot
+        right: -137px;
+        bottom: -265px;
+      }
+    }
   }
 
+  .components-list__item_horsetail {
+    &::before {
+      //horizontal line
+      right: 28px;
+    }
+
+    &::after {
+      //diagonal line
+      width: 165px;
+      right: -136px;
+      transform: rotate(7deg);
+    }
+
+    .components-list__header {
+      &::before {
+        //dot
+        right: -137px;
+        bottom: 113px;
+      }
+    }
+  }
+
+  // lines and dots for 2nd list
   .components-list:last-child {
-    align-items: flex-start;
+    .components-list__item_orthosiphon {
+      &::before {
+        //horizontal line
+        left: 28px;
+      }
+
+      &::after {
+        //diagonal line
+        width: 456px;
+        left: -134px;
+        transform: rotate(-69deg);
+        top: 484px;
+      }
+
+      .components-list__header {
+        &::before {
+          //dot
+          left: -137px;
+          bottom: -253px;
+        }
+      }
+    }
+
+    .components-list__item_goldenrod {
+      &::before {
+        //horizontal line
+        left: 28px;
+      }
+
+      &::after {
+        //diagonal line
+        width: 199px;
+        height: 1px;
+        left: -72px;
+        transform: rotate(60deg);
+        top: -114px;
+      }
+
+      .components-list__header {
+        &::before {
+          //dot
+          left: -74px;
+          bottom: 325px;
+        }
+      }
+    }
   }
 }
+
+
+
+
 
 @media (max-width: 1023px) {
   .components-list {
@@ -309,6 +502,15 @@
 
   .components__wrapper {
     background: none;
+  }
+
+  .components-list__item:hover {
+
+    &::before,
+    &::after,
+    .components-list__header::before {
+      display: none;
+    }
   }
 }
 

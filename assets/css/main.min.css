@@ -2595,6 +2595,72 @@ li {
   display: block;
 }
 
+@media (max-width: 1199px) {
+  .components__wrapper {
+    padding-bottom: 50px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .components-list:last-child {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .components-list__item_serenoa::after {
+    width: 257px;
+    right: -291px;
+    -webkit-transform: rotate(67deg);
+            transform: rotate(67deg);
+  }
+  .components-list__item_serenoa .components-list__header::before {
+    right: -137px;
+    bottom: -183px;
+  }
+  .components-list__item_horsetail::before {
+    right: -34px;
+  }
+  .components-list__item_horsetail::after {
+    width: 104px;
+    right: -136px;
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  .components-list__item_horsetail .components-list__header::before {
+    right: -137px;
+    bottom: 35px;
+  }
+  .components-list:last-child .components-list__item_orthosiphon::before {
+    left: -34px;
+  }
+  .components-list:last-child .components-list__item_orthosiphon::after {
+    width: 276px;
+    left: -127px;
+    -webkit-transform: rotate(-70deg);
+            transform: rotate(-70deg);
+    top: 317px;
+  }
+  .components-list:last-child .components-list__item_orthosiphon .components-list__header::before {
+    left: -129px;
+    bottom: -198px;
+  }
+  .components-list:last-child .components-list__item_goldenrod::before {
+    left: -34px;
+  }
+  .components-list:last-child .components-list__item_goldenrod::after {
+    width: 166px;
+    height: 1px;
+    left: -169px;
+    -webkit-transform: rotate(36deg);
+            transform: rotate(36deg);
+    top: -39px;
+  }
+  .components-list:last-child .components-list__item_goldenrod .components-list__header::before {
+    left: -173px;
+    bottom: 151px;
+  }
+}
+
 @media (max-width: 1023px) {
   .components__wrapper {
     padding-bottom: 0;
@@ -2635,19 +2701,60 @@ li {
     padding: 0 5px;
     text-align: center;
   }
-}
-
-@media (max-width: 1199px) {
-  .components__wrapper {
-    padding-bottom: 50px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  .components-list__item_serenoa::before {
+    right: 28px;
   }
-  .components-list:last-child {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+  .components-list__item_serenoa::after {
+    width: 426px;
+    right: -397px;
+    -webkit-transform: rotate(68deg);
+            transform: rotate(68deg);
+  }
+  .components-list__item_serenoa .components-list__header::before {
+    right: -137px;
+    bottom: -265px;
+  }
+  .components-list__item_horsetail::before {
+    right: 28px;
+  }
+  .components-list__item_horsetail::after {
+    width: 165px;
+    right: -136px;
+    -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
+  }
+  .components-list__item_horsetail .components-list__header::before {
+    right: -137px;
+    bottom: 113px;
+  }
+  .components-list:last-child .components-list__item_orthosiphon::before {
+    left: 28px;
+  }
+  .components-list:last-child .components-list__item_orthosiphon::after {
+    width: 456px;
+    left: -134px;
+    -webkit-transform: rotate(-69deg);
+            transform: rotate(-69deg);
+    top: 484px;
+  }
+  .components-list:last-child .components-list__item_orthosiphon .components-list__header::before {
+    left: -137px;
+    bottom: -253px;
+  }
+  .components-list:last-child .components-list__item_goldenrod::before {
+    left: 28px;
+  }
+  .components-list:last-child .components-list__item_goldenrod::after {
+    width: 199px;
+    height: 1px;
+    left: -72px;
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+    top: -114px;
+  }
+  .components-list:last-child .components-list__item_goldenrod .components-list__header::before {
+    left: -74px;
+    bottom: 325px;
   }
 }
 
@@ -2682,6 +2789,10 @@ li {
   }
   .components__wrapper {
     background: none;
+  }
+  .components-list__item:hover::before, .components-list__item:hover::after,
+  .components-list__item:hover .components-list__header::before {
+    display: none;
   }
 }
 
