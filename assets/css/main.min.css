@@ -1823,8 +1823,6 @@ li {
 .weekly-list__item {
   width: 235px;
   background-color: #fff;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
   border: 5px solid #f8f8f8;
   border-left: none;
   border-right: none;
@@ -2438,6 +2436,7 @@ li {
 .components-list__item {
   max-width: 375px;
   min-height: 181px;
+  position: relative;
 }
 
 .components-list__item:first-child {
@@ -2474,6 +2473,7 @@ li {
       -ms-flex-pack: end;
           justify-content: flex-end;
   text-align: right;
+  position: relative;
 }
 
 .components-list__img {
@@ -2492,6 +2492,107 @@ li {
   margin-bottom: 0;
   font-size: 18px;
   text-align: right;
+}
+
+.components-list__item:before, .components-list__item::after {
+  content: "";
+  width: 34px;
+  height: 1px;
+  background-color: #ffb400;
+  position: absolute;
+  top: 58px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  display: none;
+}
+
+.components-list__header::before {
+  width: 6px;
+  height: 6px;
+  content: "";
+  position: absolute;
+  right: -224px;
+  bottom: -205px;
+  border-radius: 10px;
+  background-color: #ffb400;
+  -webkit-box-shadow: 0px 0px 0px 4px rgba(255, 180, 0, 0.3);
+          box-shadow: 0px 0px 0px 4px rgba(255, 180, 0, 0.3);
+  display: none;
+}
+
+.components-list__item_serenoa::before {
+  right: -34px;
+}
+
+.components-list__item_serenoa::after {
+  width: 316px;
+  height: 1px;
+  right: -350px;
+  -webkit-transform: rotate(54deg);
+          transform: rotate(54deg);
+}
+
+.components-list__item_serenoa .components-list__header::before {
+  right: -224px;
+  bottom: -205px;
+}
+
+.components-list__item_horsetail::before {
+  right: -34px;
+}
+
+.components-list__item_horsetail::after {
+  width: 189px;
+  height: 1px;
+  right: -223px;
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
+}
+
+.components-list__item_horsetail .components-list__header::before {
+  right: -224px;
+  bottom: 12px;
+}
+
+.components-list:last-child .components-list__item_orthosiphon::before {
+  left: -34px;
+}
+
+.components-list:last-child .components-list__item_orthosiphon::after {
+  width: 335px;
+  height: 1px;
+  left: -215px;
+  -webkit-transform: rotate(-57deg);
+          transform: rotate(-57deg);
+  top: 339px;
+}
+
+.components-list:last-child .components-list__item_orthosiphon .components-list__header::before {
+  left: -218px;
+  bottom: -221px;
+}
+
+.components-list:last-child .components-list__item_goldenrod::before {
+  left: -34px;
+}
+
+.components-list:last-child .components-list__item_goldenrod::after {
+  width: 166px;
+  height: 1px;
+  left: -169px;
+  -webkit-transform: rotate(36deg);
+          transform: rotate(36deg);
+  top: -39px;
+}
+
+.components-list:last-child .components-list__item_goldenrod .components-list__header::before {
+  left: -173px;
+  bottom: 151px;
+}
+
+.components-list__item:hover::before, .components-list__item:hover::after,
+.components-list__item:hover .components-list__header::before {
+  display: block;
 }
 
 @media (max-width: 1023px) {
