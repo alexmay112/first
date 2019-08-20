@@ -47,8 +47,8 @@ $(document).ready(function () {
 
   $('.review-list__link').on('click', function (e) {
     e.preventDefault();
-    $(this).siblings('.review-list__item-discription').toggleClass('review-list__item-discription_expand');
-    // $(this).children('.review-list__link-img').toggleClass('review-list__link-img_rotate')
+    
+    $(this).siblings('.review-list__item-discription-wrapper').children('.review-list__item-discription').toggleClass('review-list__item-discription_expand');
     $(this).toggleClass('review-list__link_active')
   })
   $('.slick-arrow').on('click', function (e) {
