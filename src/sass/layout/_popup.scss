@@ -45,7 +45,6 @@
 
   .form {
     max-width: none;
-    // border: 1px solid #f3f9f8;
     border: none;
     border-radius: 0;
 
@@ -117,7 +116,6 @@
   .ever-popup__close {
     right: 3px !important;
   }
-  
 }
 
 @media (max-width: 735px) {
@@ -147,9 +145,5 @@
     width: auto;
     margin-bottom: 0;
     transform: translateY(0);
-
-    &__image {
-      // max-width: 100%;
-    }
   }
 }

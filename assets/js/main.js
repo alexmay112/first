@@ -48,10 +48,11 @@ $(document).ready(function () {
   $('.review-list__link').on('click', function (e) {
     e.preventDefault();
     $(this).siblings('.review-list__item-discription').toggleClass('review-list__item-discription_expand');
-    $(this).children('.review-list__link-img').toggleClass('review-list__link-img_rotate')
+    // $(this).children('.review-list__link-img').toggleClass('review-list__link-img_rotate')
+    $(this).toggleClass('review-list__link_active')
   })
   $('.slick-arrow').on('click', function (e) {
     $('.review-list__item-discription').removeClass('review-list__item-discription_expand');
-    $('.review-list__link-img').removeClass('review-list__link-img_rotate')
+    $('.review-list__link').removeClass('review-list__link_active')
   })
 });

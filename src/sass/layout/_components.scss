@@ -55,7 +55,6 @@
     }
   }
 
-
   &__title {
     color: #000000;
     font-size: 19px;
@@ -103,7 +102,6 @@
     background-color: $color-attention;
     position: absolute;
     top: 58px;
-
     transform-origin: left;
     display: none;
   }
@@ -467,10 +465,6 @@
     }
   }
 }
-
-
-
-
 
 @media (max-width: 1023px) {
   .components-list {

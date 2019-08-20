@@ -131,6 +131,23 @@
     background-color: $color-attention;
     box-shadow: 0px 0px 0px 6px rgba(244, 230, 208, 0.5);
 
+    &:before {
+      content: '+';
+      top: 2px;
+      position: absolute;
+      font-size: 23px;
+      color: #ffffff;
+    }
+
+    &::after {
+      display: none;
+      content: '-';
+      position: absolute;
+      top: -11px;
+      font-size: 43px;
+      color: #ffffff;
+    }
+
     &:hover {
       box-shadow: 0px 0px 0px 10px rgba(244, 230, 208, 0.5);
     }
@@ -145,8 +162,16 @@
   }
 }
 
-.review-list__link-img_rotate {
-  transform: rotate(45deg);
+// .review-list__link-img_rotate {
+//   transform: rotate(45deg);
+// }
+.review-list__link_active {
+  &:before {
+    display: none;
+  }
+  &:after {
+    display: block;
+  }
 }
 
 .review .form {

@@ -250,6 +250,7 @@
   &__old-amount {
     font-size: 34px;
     font-weight: 300;
+    line-height: 33px;
     position: relative;
 
     &::after,
@@ -282,12 +283,18 @@
     padding: 0 10px;
     font-size: 34px;
     font-weight: 700;
+    line-height: 33px;
     display: inline-block;
     border-radius: 5px;
   }
 
+  &__currency-box {
+    font-weight: 700;
+  }
+
   &__currency {
-    display: block;
+    // display: block;
+    margin-right: -4px;
     font-size: 16px;
   }
 
@@ -447,6 +454,7 @@
     left: 185px;
     bottom: 88px;
   }
+
   .hero.hero_last {
     min-height: auto;
     padding-bottom: 32px;
