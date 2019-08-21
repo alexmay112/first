@@ -1830,7 +1830,7 @@ li {
 .weekly-list__item {
   width: 235px;
   background-color: #fff;
-  border: 5px solid #f8f8f8;
+  border-radius: 0 5px 5px 0;
   border-left: none;
   border-right: none;
   position: relative;
@@ -1880,12 +1880,10 @@ li {
 
 .weekly-list__header {
   max-width: 265px;
-  margin: 20px 0;
   text-align: left;
   font-size: 19px;
   font-weight: 700;
   border-radius: 5px 0px 0px 5px;
-  border: 5px solid #f8f8f8;
   border-right: none;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
@@ -1938,6 +1936,7 @@ li {
           justify-content: center;
   font-size: 18px;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid transparent;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -2000,8 +1999,9 @@ li {
   line-height: 20px;
 }
 
-.weekly-list__item:first-child .weekly-list__title, .weekly-list__item:first-child .weekly-list__count, .weekly-list__item:first-child .weekly-list__discription {
-  border-left: none;
+.weekly-list__wrapper {
+  border: 5px solid #f8f8f8;
+  border-radius: 10px;
 }
 
 .weekly-list__item:nth-child(2) .weekly-list__toilet {
@@ -2069,7 +2069,16 @@ li {
   background-color: #e9766d;
 }
 
+@media (min-width: 1200px) {
+  .weekly-list__item:first-child .weekly-list__title, .weekly-list__item:first-child .weekly-list__count, .weekly-list__item:first-child .weekly-list__discription {
+    border-left: none;
+  }
+}
+
 @media (max-width: 1199px) {
+  .weekly-list__header-title, .weekly-list__header-count, .weekly-list__header-discription {
+    border-right: none;
+  }
   .weekly-list__discription {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2119,8 +2128,8 @@ li {
   }
 }
 
-.draggable {
-  padding: 20px 0;
+.complications .draggable {
+  overflow: visible;
   border-radius: 0px 5px 5px 0px;
 }
 
@@ -2131,32 +2140,35 @@ li {
 }
 
 @media (max-width: 9999px) {
-  .complications .weekly-list {
+  .complications .weekly-list__right {
     max-width: none;
   }
 }
 
 @media (max-width: 1199px) {
-  .complications .weekly-list {
+  .complications .draggable {
+    overflow: hidden;
+  }
+  .complications .weekly-list__right {
     max-width: 744px;
   }
 }
 
 @media (max-width: 1023px) {
-  .complications .weekly-list {
-    max-width: 488px;
+  .complications .weekly-list__right {
+    max-width: 487px;
   }
 }
 
 @media (max-width: 767px) {
-  .complications .weekly-list {
-    max-width: 360px;
+  .complications .weekly-list__right {
+    max-width: 359px;
   }
 }
 
 @media (max-width: 639px) {
-  .complications .weekly-list {
-    max-width: 200px;
+  .complications .weekly-list__right {
+    max-width: 199px;
   }
 }
 
@@ -2164,8 +2176,8 @@ li {
   .complications .weekly-list__header {
     min-width: 100px;
   }
-  .complications .weekly-list {
-    width: 172px;
+  .complications .weekly-list__right {
+    width: 171px;
   }
 }
 
