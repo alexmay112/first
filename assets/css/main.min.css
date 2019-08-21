@@ -1816,10 +1816,12 @@ li {
 }
 
 .weekly-list__wrapper {
+  margin-bottom: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 35px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
 }
 
 .weekly-list .slick-prev::before,
@@ -2168,7 +2170,7 @@ li {
 
 @media (max-width: 639px) {
   .complications .weekly-list__right {
-    max-width: 199px;
+    max-width: 240px;
   }
 }
 
@@ -3725,6 +3727,11 @@ li {
     padding: 40px 10px;
     background: none;
     text-align: center;
+  }
+  .fast__title:before {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .fast__title {
     display: inline-block;
