@@ -1,7 +1,7 @@
 .how {
   .product {
-    top: 242px;
-    left: 52%;
+    top: 232px;
+    left: 50%;
     bottom: auto;
     transform: translateX(-50%);
     background: none;
@@ -12,7 +12,7 @@
     }
 
     &__image {
-      left: 0;
+      left: 22px;
     }
   }
 
@@ -57,7 +57,7 @@
 
   &__item {
     max-width: 370px;
-    padding: 145px 0; // for IE
+    padding: 135px 0; // for IE
     display: flex;
     align-items: center;
   }
@@ -226,7 +226,8 @@
     }
 
     &__image {
-      position: static;
+      position: relative;
+      left: 19px;
     }
   }
 }
@@ -241,7 +242,7 @@
     }
 
     &__image {
-      left: 0;
+      left: 12px;
     }
   }
 

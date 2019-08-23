@@ -19,7 +19,7 @@
     height: 257px;
     position: relative;
     left: 0;
-    top: 0;
+    top: 14px;
     text-align: center;
     background: none;
     transform: translate(0);
@@ -58,6 +58,32 @@
       margin: 15px auto;
     }
   }
+
+  .form__prices {
+    max-width: 220px;
+    margin: auto;
+  }
+
+  .form__prices-wrapper {
+    min-height: 123px;
+    padding-top: 30px;
+  }
+
+  .form__prices-wrapper:last-child {
+    position: relative;
+    background: url("../img/bg-price--.png") 50% 100% no-repeat;
+
+    // &:before {
+    //   position: absolute;
+    //   top: 0;
+    //   left: 50%;
+    //   transform: translateX(-51px);
+    //   width: 101px;
+    //   height: 15px;
+    //   background-color: $main-accent-color;
+    //   content: "";
+    // }
+  }
 }
 
 .popup__wrapper {
@@ -79,7 +105,7 @@
 .ever-popup__close {
   width: 18px !important;
   height: 18px !important;
-  right: 7px !important;
+  right: 12px !important;
   top: 6px !important;
 }
 
@@ -91,6 +117,37 @@
   background-color: #d8e1e5 !important;
 }
 
+@media (max-width: 1200px) {
+  .popup .product {
+    max-width: 421px;
+    min-width: 0;
+    width: auto;
+    margin-bottom: 0;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 735px) {
+  .popup .product {
+    width: auto;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .popup__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // .popup__form {
+  //   width: 240px;
+  // }
+
+  // .ever-popup__close {
+  //   right: 3px !important;
+  // }
+}
 
 @media (max-width: 479px) {
 
@@ -103,28 +160,6 @@
   }
 }
 
-@media (max-width: 640px) {
-  .popup__wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .popup__form {
-    width: 240px;
-  }
-
-  .ever-popup__close {
-    right: 3px !important;
-  }
-}
-
-@media (max-width: 735px) {
-  .popup .product {
-    width: auto;
-    transform: translateY(0);
-  }
-}
-
 @media (min-width: 1024px) and (max-width: 1200px) {
   .popup .product__image {
     width: auto;
@@ -134,16 +169,5 @@
 @media (max-width: 1023px) {
   .popup__product {
     display: none;
-  }
-}
-
-
-@media (max-width: 1200px) {
-  .popup .product {
-    max-width: 421px;
-    min-width: 0;
-    width: auto;
-    margin-bottom: 0;
-    transform: translateY(0);
   }
 }

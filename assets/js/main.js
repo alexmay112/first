@@ -4,6 +4,7 @@ $(document).ready(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     infinite: false,
+    adaptiveHeight: false,
     responsive: [{
         breakpoint: 1200,
         settings: {
@@ -45,9 +46,23 @@ $(document).ready(function () {
     ]
   });
 
+  $(document).on('click', 'a[href^="#"]', function (evt) {
+    let target = $(this).attr('href');
+    evt.preventDefault();
+
+    $('html, body').animate({
+      scrollTop: $(target).offset().top
+    }, 500);
+  })
+
+
+  // $('.rom__img').on('click', function (e) {
+  //   e.preventDefault();
+  // })
+
   $('.review-list__link').on('click', function (e) {
     e.preventDefault();
-    
+
     $(this).siblings('.review-list__item-discription-wrapper').children('.review-list__item-discription').toggleClass('review-list__item-discription_expand');
     $(this).toggleClass('review-list__link_active')
   })

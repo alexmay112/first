@@ -26,7 +26,7 @@
   }
 
   .reasons-list__link {
-    width: 23px;
+    width: 24px;
     height: 23px;
     background-size: 5px 11px;
   }
@@ -47,10 +47,7 @@
 
   &__item {
     width: 235px;
-    // margin-left: -1px;
     background-color: #fff;
-    // box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
-    // border: 5px solid #f8f8f8;
     border-radius: 0 5px 5px 0;
     border-left: none;
     border-right: none;
@@ -99,13 +96,11 @@
   }
 
   &__header {
-    max-width: 265px;
-    // margin: 20px 0;
+    width: 265px;
     text-align: left;
     font-size: 19px;
     font-weight: 700;
     border-radius: 5px 0px 0px 5px;
-    // border: 5px solid #f8f8f8;
     border-right: none;
     background-color: #ffffff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
@@ -202,7 +197,6 @@
 }
 
 .weekly-list__wrapper {
-  // border: 5px solid #f8f8f8;
   border: 5px solid #f8f8f8;
   border-radius: 10px;
 }
@@ -297,6 +291,10 @@
 
 
 @media (max-width: 1199px) {
+  .complications .section__title {
+    max-width: 680px;
+  }
+
   .weekly-list__header {
 
     &-title,
@@ -341,6 +339,10 @@
   .weekly-list__title {
     font-size: 16px;
   }
+
+  .weekly-list__discription {
+    font-size: 16px;
+  }
 }
 
 // media for slick prev/next arrows
@@ -373,7 +375,7 @@
 // media for complications slider
 @media (max-width: 9999px) {
   .complications .weekly-list__right {
-    max-width: none;
+    // max-width: 931px;
   }
 }
 
@@ -384,6 +386,18 @@
 
   .complications .weekly-list__right {
     max-width: 744px;
+  }
+
+  .weekly-list__item:hover {
+    transform: none;
+    box-shadow: none;
+    cursor: auto;
+
+    .weekly-list__title,
+    .weekly-list__count,
+    .weekly-list__discription {
+      border-left: 1px solid rgba(0, 0, 0, 0.1);
+    }
   }
 }
 
@@ -403,6 +417,9 @@
   .complications .weekly-list__right {
     max-width: 240px;
   }
+  .complications .section__title {
+    max-width: 320px;
+  }
 }
 
 @media (max-width: 479px) {
@@ -413,4 +430,8 @@
   .complications .weekly-list__right {
     width: 171px;
   }
+  .complications .section__title {
+    max-width: 270px;
+  }
+
 }

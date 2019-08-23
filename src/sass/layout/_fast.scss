@@ -63,13 +63,12 @@
   }
 
   .fast__title:before {
-    left: 50%;
-    transform: translateX(-50%);
+display: none;
   }
 
   .fast__title {
     display: inline-block;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .fast__discription {

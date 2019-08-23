@@ -7,6 +7,7 @@
   width: 54px;
   height: auto;
 }
+
 .rom__svg {
   fill: $main-accent-color;
 }
@@ -23,5 +24,33 @@
 .rom__right {
   .rom__text:first-child {
     margin-bottom: 8px;
+  }
+}
+
+.rom__img {
+  width: 54px;
+  height: 54px !important;
+  pointer-events: none;
+}
+
+.rom__link:hover {
+  color: $main-accent-color;
+}
+
+@media (max-width: 1199px) {
+  .footer {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .footer {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 20px 0;
   }
 }

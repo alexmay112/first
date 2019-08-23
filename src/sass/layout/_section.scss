@@ -3,7 +3,7 @@
   position: relative;
 
   &__title {
-    margin: 0 auto 30px;
+    margin: 0 auto 25px;
     text-align: center;
     color: #000000;
     font-size: 40px;
@@ -25,11 +25,18 @@
 
 .components.section {
   padding-bottom: 0;
+  .container {
+    max-width: 1103px;
+  }
 }
 
 .review.section {
   padding-bottom: 128px;
 }
+// .review .container {
+//   max-width: 1310px;
+//   padding: 0 40px;
+// }
 
 .how.section {
   padding-bottom: 140px;
@@ -44,6 +51,15 @@
     padding: 50px 0;
   }
 
+  .section__title {
+    margin: 0 auto 20px;
+    line-height: 40px;
+  }
+
+  .section__subtitle {
+    margin: 0 0 20px;
+  }
+
   .review.section {
     padding-bottom: 80px;
   }
@@ -54,6 +70,12 @@
 
   .how.section {
     padding-bottom: 100px;
+  }
+
+  .components.section {
+    .container {
+      max-width: 1007px;
+    }
   }
 
   .components__wrapper {
@@ -75,17 +97,15 @@
   }
 
   .review.section {
-    padding-bottom: 70px;
+    padding-bottom: 140px;
   }
 
   .hero.hero_last {
     padding: 40px 0 60px;
   }
-
-  .components__wrapper {
+  .components.section {
     padding-bottom: 40px;
   }
-
   .section__title {
     margin-bottom: 10px;
   }
@@ -105,17 +125,15 @@
   }
 
   .review.section {
-    padding-bottom: 65px;
+    padding-bottom: 125px;
   }
 
   .hero.hero_last {
     padding: 35px 0 60px;
   }
-
-  .components__wrapper {
+  .components.section {
     padding-bottom: 35px;
   }
-
 
   .section__title {
     font-size: 35px;
@@ -133,14 +151,13 @@
   }
 
   .review.section {
-    padding-bottom: 60px;
+    padding-bottom: 120px;
   }
 
   .hero.hero_last {
     padding: 30px 0 50px;
   }
-
-  .components__wrapper {
+  .components.section {
     padding-bottom: 30px;
   }
 

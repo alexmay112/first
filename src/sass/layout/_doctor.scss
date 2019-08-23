@@ -7,13 +7,13 @@
 
   .section__title {
     max-width: 892px;
-    margin: 0 auto;
+    // margin: 0 auto;
   }
 
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin: 88px 0 0 auto;
+    margin: 18px 0 0 auto;
     position: relative;
   }
 
@@ -28,7 +28,7 @@
   }
 
   &__text {
-    padding-bottom: 80px;
+    padding: 80px 0 90px;
   }
 
   &__photo {
@@ -38,6 +38,7 @@
   }
 
   &__description {
+    margin-bottom: 20px;
     font-size: 18px;
     line-height: 24px;
 
@@ -56,7 +57,7 @@
         content: "";
         position: absolute;
         left: 0;
-        top: -30px;
+        top: -50px;
         width: 24px;
         height: 17px;
         background: url("../img/icon-quotes.png") no-repeat;
@@ -92,7 +93,7 @@
 
 @media (min-width: 1200px) {
   .doctor__text {
-    padding-right: 90px;
+    padding-right: 23px;
   }
 
   .doctor__text,
@@ -107,10 +108,13 @@
   }
 
   .doctor__text {
-    padding-bottom: 50px;
+    padding-top: 32px;
+    padding-bottom: 40px;
+  }
+  .doctor__description-wrapper::before {
+    top: -30px;
   }
 }
-
 
 @media (min-width: 1024px) {
 
@@ -129,6 +133,7 @@
   }
 
   .doctor__wrapper {
+    margin: 28px 0 0 auto;
     flex-direction: column;
   }
 
@@ -138,6 +143,7 @@
 
   .doctor__text {
     padding-top: 40px;
+    padding-bottom: 35px;
     flex-basis: auto; //for IE
   }
 }

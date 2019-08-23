@@ -82,6 +82,7 @@
     border-radius: 100px;
     border: 4px solid $main-accent-color;
     box-shadow: inset 0 0 0 2px $main-accent-color;
+    z-index: 1;
   }
 
   &__discription {
@@ -91,139 +92,53 @@
   }
 }
 
-.components-list__item {
-
-  // common lines
-  &:before,
-  &::after {
-    content: "";
-    width: 34px;
-    height: 1px;
-    background-color: $color-attention;
-    position: absolute;
-    top: 58px;
-    transform-origin: left;
-    display: none;
-  }
-}
-
-.components-list__header {
-  &::before {
-    //common dot
-    width: 6px;
-    height: 6px;
-    content: "";
-    position: absolute;
-    right: -224px;
-    bottom: -205px;
-    border-radius: 10px;
-    background-color: $color-attention;
-    box-shadow: 0px 0px 0px 4px rgba(255, 180, 0, 0.3);
-    display: none;
-  }
+.components-list__header:before {
+  width: 180px;
+  height: 265px;
+  content: "";
+  position: absolute;
+  display: none;
 }
 
 .components-list__item_serenoa {
-  &::before {
-    //horizontal line
-    right: -34px;
-  }
-
-  &::after {
-    //diagonal line
-    width: 316px;
-    height: 1px;
-    right: -350px;
-    transform: rotate(54deg);
-  }
-
-  .components-list__header {
-    &::before {
-      //dot
-      right: -224px;
-      bottom: -205px;
-    }
+  .components-list__header:before {
+    right: -180px;
+    bottom: -205px;
+    background: url(../img/comp-img1-before.svg) no-repeat;
   }
 }
 
 .components-list__item_horsetail {
-  &::before {
-    //horizontal line
-    right: -34px;
-  }
-
-  &::after {
-    //diagonal line
-    width: 189px;
-    height: 1px;
-    right: -223px;
-    transform: rotate(12deg);
-  }
-
-  .components-list__header {
-    &::before {
-      //dot
-      right: -224px;
-      bottom: 12px;
-    }
+  .components-list__header:before {
+    width: 195px;
+    height: 64px;
+    right: -180px;
+    bottom: 56px;
+    background: url(../img/comp-img2-before.svg) no-repeat;
   }
 }
 
-// lines and dots for 2nd list
 .components-list:last-child {
   .components-list__item_orthosiphon {
-    &::before {
-      //horizontal line
-      left: -34px;
-    }
-
-    &::after {
-      //diagonal line
-      width: 335px;
-      height: 1px;
-      left: -215px;
-      transform: rotate(-57deg);
-      top: 339px;
-    }
-
-    .components-list__header {
-      &::before {
-        //dot
-        left: -218px;
-        bottom: -221px;
-      }
+    .components-list__header:before {
+      left: -175px;
+      bottom: -203px;
+      background: url(../img/comp-img3-before.svg) no-repeat;
     }
   }
 
   .components-list__item_goldenrod {
-    &::before {
-      //horizontal line
-      left: -34px;
-    }
-
-    &::after {
-      //diagonal line
-      width: 166px;
-      height: 1px;
-      left: -169px;
-      transform: rotate(36deg);
-      top: -39px;
-    }
-
-    .components-list__header {
-      &::before {
-        //dot
-        left: -173px;
-        bottom: 151px;
-      }
+    .components-list__header:before {
+      width: 152px;
+      height: 93px;
+      left: -128px;
+      bottom: 54px;
+      background: url(../img/comp-img4-before.svg) no-repeat;
     }
   }
 }
 
 .components-list__item:hover {
-
-  &::before,
-  &::after,
   .components-list__header::before {
     display: block;
   }
@@ -241,96 +156,33 @@
   }
 
   .components-list__item_serenoa {
-    // &::before {
-    //   //horizontal line
-    //   right: -34px;
-    // }
-
-    &::after {
-      //diagonal line
-      width: 257px;
-      // height: 1px;
-      right: -291px;
-      transform: rotate(67deg);
-    }
-
-    .components-list__header {
-      &::before {
-        //dot
-        right: -137px;
-        bottom: -183px;
-      }
+    .components-list__header:before {
+      right: -134px;
+      bottom: -188px;
     }
   }
 
   .components-list__item_horsetail {
-    &::before {
-      //horizontal line
-      right: -34px;
-    }
-
-    &::after {
-      //diagonal line
-      width: 104px;
-      right: -136px;
-      transform: rotate(10deg);
-    }
-
-    .components-list__header {
-      &::before {
-        //dot
-        right: -137px;
-        bottom: 35px;
-      }
+    .components-list__header:before {
+      right: -138px;
+      bottom: 62px;
+      transform: rotate(-12deg);
     }
   }
 
-  // lines and dots for 2nd list
   .components-list:last-child {
     .components-list__item_orthosiphon {
-      &::before {
-        //horizontal line
-        left: -34px;
-      }
-
-      &::after {
-        //diagonal line
-        width: 276px;
-        left: -127px;
-        transform: rotate(-70deg);
-        top: 317px;
-      }
-
-      .components-list__header {
-        &::before {
-          //dot
-          left: -129px;
-          bottom: -198px;
-        }
+      .components-list__header:before {
+        left: -125px;
+        bottom: -187px;
       }
     }
 
     .components-list__item_goldenrod {
-      &::before {
-        //horizontal line
-        left: -34px;
-      }
-
-      &::after {
-        //diagonal line
-        width: 166px;
-        height: 1px;
-        left: -169px;
-        transform: rotate(36deg);
-        top: -39px;
-      }
-
-      .components-list__header {
-        &::before {
-          //dot
-          left: -173px;
-          bottom: 151px;
-        }
+      .components-list__header:before {
+        left: -94px;
+        transform: rotate(15deg);
+        bottom: 54px;
       }
     }
   }
@@ -339,21 +191,31 @@
 @media (max-width: 1023px) {
 
   .components__wrapper {
+    width: 90%;
+    margin: auto;
     padding-bottom: 0;
   }
 
   .components-list {
     flex-direction: column;
     justify-content: space-between;
-  }
 
-  .components-list,
-  .components-list:last-child .components-list {
+    &__item {
+      width: 375px;
+
+      &:hover {
+        cursor: auto;
+
+        .components-list__img {
+          border: 4px solid $main-accent-color;
+          box-shadow: inset 0 0 0 2px $main-accent-color;
+        }
+      }
+    }
 
     &__header {
-      flex-direction: column;
+      justify-content: flex-start;
       text-align: left;
-      text-align: center;
     }
 
     &__title-wrapper {
@@ -361,32 +223,32 @@
     }
 
     &__img {
-      margin: 0 auto;
+      margin: 0 16px 0 0;
       order: 0;
     }
 
     &__discription {
       padding: 0 5px;
-      text-align: center;
+      text-align: left;
     }
   }
 
+  .components-list:first-child {
+    margin-bottom: 40px;
+  }
+
+  .components-list .components-list__item:first-child {
+    margin-right: 15px;
+  }
+
+  .components-list__item,
+  .components-list__item:first-child {
+    margin-bottom: 0;
+  }
+
   .components-list__item_serenoa {
-    &::before {
-      //horizontal line
-      right: 28px;
-    }
-
-    &::after {
-      //diagonal line
-      width: 426px;
-      right: -397px;
-      transform: rotate(68deg);
-    }
-
     .components-list__header {
       &::before {
-        //dot
         right: -137px;
         bottom: -265px;
       }
@@ -394,21 +256,8 @@
   }
 
   .components-list__item_horsetail {
-    &::before {
-      //horizontal line
-      right: 28px;
-    }
-
-    &::after {
-      //diagonal line
-      width: 165px;
-      right: -136px;
-      transform: rotate(7deg);
-    }
-
     .components-list__header {
       &::before {
-        //dot
         right: -137px;
         bottom: 113px;
       }
@@ -418,22 +267,8 @@
   // lines and dots for 2nd list
   .components-list:last-child {
     .components-list__item_orthosiphon {
-      &::before {
-        //horizontal line
-        left: 28px;
-      }
-
-      &::after {
-        //diagonal line
-        width: 456px;
-        left: -134px;
-        transform: rotate(-69deg);
-        top: 484px;
-      }
-
       .components-list__header {
         &::before {
-          //dot
           left: -137px;
           bottom: -253px;
         }
@@ -441,23 +276,8 @@
     }
 
     .components-list__item_goldenrod {
-      &::before {
-        //horizontal line
-        left: 28px;
-      }
-
-      &::after {
-        //diagonal line
-        width: 199px;
-        height: 1px;
-        left: -72px;
-        transform: rotate(60deg);
-        top: -114px;
-      }
-
       .components-list__header {
         &::before {
-          //dot
           left: -74px;
           bottom: 325px;
         }
@@ -473,11 +293,28 @@
   }
 
   .components-list__item {
-    min-height: 334px;
+    min-height: auto;
   }
 
   .components-list:last-child {
     align-items: flex-start;
+  }
+
+  .components-list__item:hover {
+    .components-list__header::before {
+      display: none;
+    }
+  }
+
+  .components__wrapper {
+    flex-direction: column;
+    background: none;
+  }
+
+  .components-list {
+    width: auto;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 
@@ -486,39 +323,40 @@
     width: auto;
   }
 
-  .components-list__item {
-    min-height: 295px;
+  .components__wrapper {
+    width: 100%;
+  }
+
+  .components-list:first-child {
+    margin-bottom: 30px;
   }
 
   .components-list:last-child {
     align-items: flex-start;
   }
-
-  .components__wrapper {
-    background: none;
-  }
-
-  .components-list__item:hover {
-
-    &::before,
-    &::after,
-    .components-list__header::before {
-      display: none;
-    }
-  }
 }
 
 @media (max-width: 639px) {
-  .components-list {
-    width: 50%;
+  .components__wrapper {
+    max-width: 420px;
   }
 
-  .components-list__item {
-    min-height: 370px;
+  .components-list:first-child {
+    margin-bottom: 18px;
   }
 
   .components-list .components-list__item:first-child {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+    margin-right: 0;
+  }
+
+  .components-list {
+    flex-direction: column;
+  }
+
+  .components-list__item {
+    max-width: none;
+    width: auto;
   }
 
   .components-list__item:first-child {
@@ -538,8 +376,44 @@
     flex-direction: column;
   }
 
+  .components-list__header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .components-list__title-wrapper {
+    text-align: center;
+  }
+
+  .components-list__img {
+    margin: 0;
+  }
+
+  .components-list:last-child .components-list__img {
+    margin: 0;
+  }
+  .components-list__discription {
+    text-align: center;
+  }
+
+  .components-list:last-child .components-list__discription {
+    text-align: center;
+  }
+
   .components-list {
     width: auto;
+  }
+
+  .components-list__title {
+    margin: 5px 0;
+  }
+
+  .components-list__discription {
+    margin-top: 5px;
+  }
+
+  .components-list:first-child {
+    margin-bottom: 0;
   }
 
   .components-list__item {

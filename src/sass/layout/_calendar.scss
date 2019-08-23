@@ -33,15 +33,13 @@
   }
 
   .hero-features__text {
-    margin: 6px 0 0 18px;
+    margin: 8px 0 0 18px;
     line-height: 23px;
   }
 
   .product {
     position: absolute;
-    // left: -465px;
     left: 50%;
-    // top: 57%;
     top: 41%;
     transform: translateX(-167px);
   }
@@ -200,7 +198,8 @@
     }
 
     .hero-features__list {
-      margin-bottom: 30px;
+      max-width: 680px;
+      margin: 0 auto 30px;
       display: flex;
       flex-direction: column;
     }
