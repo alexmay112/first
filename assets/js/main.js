@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+
   $('.weekly-list').slick({
     arrows: true,
     slidesToShow: 4,
@@ -55,11 +57,6 @@ $(document).ready(function () {
     }, 500);
   })
 
-
-  // $('.rom__img').on('click', function (e) {
-  //   e.preventDefault();
-  // })
-
   $('.review-list__link').on('click', function (e) {
     e.preventDefault();
 
@@ -70,4 +67,13 @@ $(document).ready(function () {
     $('.review-list__item-discription').removeClass('review-list__item-discription_expand');
     $('.review-list__link').removeClass('review-list__link_active')
   })
+
+  $('.review-list').on('swipe', function (event, slick, direction) {
+    console.log(direction);
+    // $(this).siblings('.review-list__item-discription-wrapper').children('.review-list__item-discription').toggleClass('review-list__item-discription_expand');
+    $('.review-list__item-discription').removeClass('review-list__item-discription_expand');
+    // $(this).toggleClass('review-list__link_active')
+    $('.review-list__link').removeClass('review-list__link_active');
+  })
+
 });

@@ -102,7 +102,7 @@
 
 .components-list__item_serenoa {
   .components-list__header:before {
-    right: -180px;
+    right: -176px;
     bottom: -205px;
     background: url(../img/comp-img1-before.svg) no-repeat;
   }
@@ -112,9 +112,10 @@
   .components-list__header:before {
     width: 195px;
     height: 64px;
-    right: -180px;
-    bottom: 56px;
+    right: -173px;
+    bottom: 11px;
     background: url(../img/comp-img2-before.svg) no-repeat;
+    transform: rotate(25deg);
   }
 }
 
@@ -157,17 +158,16 @@
 
   .components-list__item_serenoa {
     .components-list__header:before {
-      right: -134px;
+      right: -128px;
       bottom: -188px;
     }
   }
 
   .components-list__item_horsetail {
     .components-list__header:before {
-      right: -138px;
-      bottom: 62px;
-      transform: rotate(-12deg);
-    }
+      right: -126px;
+      bottom: 34px;
+      transform: rotate(27deg);    }
   }
 
   .components-list:last-child {
