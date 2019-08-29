@@ -68,7 +68,7 @@ $(document).ready(function () {
     $('.review-list__link').removeClass('review-list__link_active')
   })
 
-  $('.review-list').on('swipe', function (event, slick, direction) {
+  $('.review-list').on('beforeChange', function (event, slick, direction) {
     console.log(direction);
     // $(this).siblings('.review-list__item-discription-wrapper').children('.review-list__item-discription').toggleClass('review-list__item-discription_expand');
     $('.review-list__item-discription').removeClass('review-list__item-discription_expand');

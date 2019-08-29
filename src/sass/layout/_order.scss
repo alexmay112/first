@@ -142,6 +142,12 @@
   }
 }
 
+.section.order .input-wrapper img {
+  width: 15px;
+  left: 17px;
+  top: 14px;
+}
+
 @media (max-width: 1199px) {
   .order__list-item {
 
@@ -188,5 +194,13 @@
 
   .order__list-item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 639px) {
+  .order__title {
+    margin-top: 17px;
+    margin-bottom: 6px;
+    padding-top: 15px;
   }
 }

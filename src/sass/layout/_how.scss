@@ -206,6 +206,9 @@
   .how .product__image {
     left: 24px;
   }
+  .how__individual {
+    margin-bottom: 35px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -230,6 +233,9 @@
       left: 19px;
     }
   }
+  .how__individual {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 479px) {
@@ -242,7 +248,7 @@
     }
 
     &__image {
-      left: 12px;
+      left: 10px;
     }
   }
 
