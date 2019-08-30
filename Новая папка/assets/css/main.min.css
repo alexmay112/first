@@ -2218,7 +2218,7 @@ input::-moz-placeholder {
   .complications .slick-prev {
     top: auto;
     bottom: -40px;
-    left: -219px;
+    left: -260px;
   }
   .complications .slick-next {
     top: auto;
@@ -2230,6 +2230,12 @@ input::-moz-placeholder {
 .complications .draggable {
   overflow: visible;
   border-radius: 0px 5px 5px 0px;
+}
+
+@media (max-width: 639px) {
+  .complications .slick-prev {
+    left: -218px;
+  }
 }
 
 @media (max-width: 479px) {
@@ -3072,6 +3078,9 @@ input::-moz-placeholder {
   }
   .doctor__description:nth-child(3) {
     padding-right: 0;
+  }
+  .doctor__position {
+    padding-right: 80px;
   }
   .doctor__text,
   .doctor__image {
