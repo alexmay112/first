@@ -10,7 +10,7 @@
   &__form {
     width: 300px;
     max-width: none;
-    border: 1px solid #f3f9f8;
+    // border: 1px solid #f3f9f8;
     border-radius: 0px 10px 10px 0px;
   }
 
@@ -72,18 +72,11 @@
   .form__prices-wrapper:last-child {
     position: relative;
     background: url("../img/bg-price--.png") 50% 100% no-repeat;
-
-    // &:before {
-    //   position: absolute;
-    //   top: 0;
-    //   left: 50%;
-    //   transform: translateX(-51px);
-    //   width: 101px;
-    //   height: 15px;
-    //   background-color: $main-accent-color;
-    //   content: "";
-    // }
   }
+}
+
+.popup__wrapper-out {
+  padding-top: 15px;
 }
 
 .popup__wrapper {
@@ -106,7 +99,7 @@
   width: 18px !important;
   height: 18px !important;
   right: 12px !important;
-  top: 6px !important;
+  top: 21px !important;
 }
 
 .ever-popup__close::after,
@@ -139,14 +132,6 @@
     flex-direction: column;
     align-items: center;
   }
-
-  // .popup__form {
-  //   width: 240px;
-  // }
-
-  // .ever-popup__close {
-  //   right: 3px !important;
-  // }
 }
 
 @media (max-width: 479px) {

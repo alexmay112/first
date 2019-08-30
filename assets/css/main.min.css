@@ -775,7 +775,7 @@ li {
     padding-bottom: 80px;
   }
   .hero.hero_last {
-    padding: 50px 0;
+    padding: 50px 0 86px;
   }
   .how.section {
     padding-bottom: 100px;
@@ -802,7 +802,7 @@ li {
     padding-bottom: 140px;
   }
   .hero.hero_last {
-    padding: 40px 0 60px;
+    padding: 40px 0 76px;
   }
   .components.section {
     padding-bottom: 40px;
@@ -826,7 +826,7 @@ li {
     padding-bottom: 125px;
   }
   .hero.hero_last {
-    padding: 35px 0 60px;
+    padding: 35px 0 70px;
   }
   .components.section {
     padding-bottom: 35px;
@@ -848,7 +848,7 @@ li {
     padding-bottom: 120px;
   }
   .hero.hero_last {
-    padding: 30px 0 50px;
+    padding: 30px 0 65px;
   }
   .components.section {
     padding-bottom: 30px;
@@ -1346,17 +1346,7 @@ input::-moz-placeholder {
 }
 
 .form .form__input_clip {
-  width: 70px;
-  height: 70px;
-  padding-left: 70px;
-  background-image: url("../img/icon-clip.svg");
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-color: transparent;
-}
-
-.form .form__input_clip:hover {
-  cursor: pointer;
+  display: none;
 }
 
 @media (min-width: 1315px) {
@@ -1369,7 +1359,7 @@ input::-moz-placeholder {
 @media (max-width: 1199px) {
   .hero {
     min-height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     background: url("../img/bg-promo.png") 50% no-repeat;
     background-size: cover;
   }
@@ -1429,7 +1419,7 @@ input::-moz-placeholder {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .hero {
-    padding-bottom: 60px;
+    padding-bottom: 65px;
     background-size: cover;
   }
   .hero-features {
@@ -1510,7 +1500,7 @@ input::-moz-placeholder {
 
 @media (min-width: 640px) and (max-width: 767px) {
   .hero {
-    padding-bottom: 60px;
+    padding-bottom: 65px;
     background-size: cover;
   }
   .hero .hero-features__item {
@@ -1614,7 +1604,7 @@ input::-moz-placeholder {
     margin-top: 20px;
   }
   .hero {
-    padding-bottom: 60px;
+    padding-bottom: 65px;
     background-size: cover;
   }
   .order-wrapper {
@@ -1700,7 +1690,7 @@ input::-moz-placeholder {
     margin-left: 0;
   }
   .hero {
-    padding: 30px 0 60px;
+    padding: 30px 0 67px;
     background-size: cover;
   }
   .order-wrapper {
@@ -2227,12 +2217,12 @@ input::-moz-placeholder {
 @media (max-width: 1199px) {
   .complications .slick-prev {
     top: auto;
-    bottom: -30px;
+    bottom: -40px;
     left: -260px;
   }
   .complications .slick-next {
     top: auto;
-    bottom: -30px;
+    bottom: -40px;
     right: -7px;
   }
 }
@@ -2240,6 +2230,12 @@ input::-moz-placeholder {
 .complications .draggable {
   overflow: visible;
   border-radius: 0px 5px 5px 0px;
+}
+
+@media (max-width: 639px) {
+  .complications .slick-prev {
+    left: -218px;
+  }
 }
 
 @media (max-width: 479px) {
@@ -2887,6 +2883,12 @@ input::-moz-placeholder {
   }
 }
 
+@media (min-width: 640px) {
+  .components-list__title-brake {
+    display: none;
+  }
+}
+
 @media (min-width: 480px) and (max-width: 639px) {
   .components__wrapper {
     padding-bottom: 0;
@@ -3068,8 +3070,17 @@ input::-moz-placeholder {
 }
 
 @media (min-width: 1200px) {
-  .doctor__text {
-    padding-right: 60px;
+  .doctor__description:first-child {
+    padding-right: 50px;
+  }
+  .doctor__description:nth-child(2) {
+    padding-right: 18px;
+  }
+  .doctor__description:nth-child(3) {
+    padding-right: 0;
+  }
+  .doctor__position {
+    padding-right: 80px;
   }
   .doctor__text,
   .doctor__image {
@@ -3139,7 +3150,7 @@ input::-moz-placeholder {
 }
 
 .review__feedback {
-  max-width: 626px;
+  max-width: 628px;
   margin: 0 auto 37px;
   color: #191919;
   text-align: center;
@@ -3353,15 +3364,15 @@ input::-moz-placeholder {
 }
 
 .review .form .form__input_clip-wrapper {
-  width: 70px;
-  height: 70px;
   position: absolute;
-  right: 0;
+  right: 21px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  border-radius: 100px;
-  overflow: hidden;
+}
+
+.review .form .form__input_clip-wrapper:hover {
+  cursor: pointer;
 }
 
 .review .form__submit {
@@ -3413,6 +3424,10 @@ input::-moz-placeholder {
 
 .section.review .input-wrapper img {
   top: 41px;
+}
+
+.review__file-trigger {
+  display: block;
 }
 
 @media (min-width: 1200px) {
@@ -3493,6 +3508,14 @@ input::-moz-placeholder {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
             flex-grow: 0;
+  }
+  .review-list__item {
+    margin: 45px 10px 25px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+  }
+  .review-list__item-discription-wrapper {
+    padding: 30px 10px 20px;
   }
 }
 
@@ -3914,7 +3937,7 @@ input::-moz-placeholder {
   }
   .fast__button {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 3px;
   }
 }
 
@@ -4200,7 +4223,6 @@ input::-moz-placeholder {
 .popup__form {
   width: 300px;
   max-width: none;
-  border: 1px solid #f3f9f8;
   border-radius: 0px 10px 10px 0px;
 }
 
@@ -4265,6 +4287,10 @@ input::-moz-placeholder {
   background: url("../img/bg-price--.png") 50% 100% no-repeat;
 }
 
+.popup__wrapper-out {
+  padding-top: 15px;
+}
+
 .popup__wrapper {
   max-width: 730px;
   width: 100%;
@@ -4289,7 +4315,7 @@ input::-moz-placeholder {
   width: 18px !important;
   height: 18px !important;
   right: 12px !important;
-  top: 6px !important;
+  top: 21px !important;
 }
 
 .ever-popup__close::after,

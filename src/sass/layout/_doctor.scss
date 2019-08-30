@@ -92,8 +92,21 @@
 }
 
 @media (min-width: 1200px) {
-  .doctor__text {
-    padding-right: 60px;
+
+  .doctor__description:first-child {
+    padding-right: 50px;
+  }
+
+  .doctor__description:nth-child(2) {
+    padding-right: 18px;
+  }
+
+  .doctor__description:nth-child(3) {
+    padding-right: 0;
+  }
+
+  .doctor__position {
+    padding-right: 80px;
   }
 
   .doctor__text,
@@ -111,6 +124,7 @@
     padding-top: 32px;
     padding-bottom: 40px;
   }
+
   .doctor__description-wrapper::before {
     top: -30px;
   }

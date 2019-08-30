@@ -76,4 +76,8 @@ $(document).ready(function () {
     $('.review-list__link').removeClass('review-list__link_active');
   })
 
+  $('.review__file-trigger').on('click', function () {
+    $('.form__input_clip').click();
+  });
+
 });

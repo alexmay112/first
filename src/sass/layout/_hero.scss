@@ -403,11 +403,6 @@ input:-webkit-autofill:active  {
   z-index: 10;
 }
 
-
-.form .form__input_phone {
-  // background-image: url("../img/icon-phone-form.svg");
-}
-
 .form .form__input_text-wrapper {
   display: block;
   position: relative;
@@ -422,17 +417,14 @@ input:-webkit-autofill:active  {
 }
 
 .form .form__input_clip {
-  width: 70px;
-  height: 70px;
-  padding-left: 70px;
-  background-image: url("../img/icon-clip.svg");
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-color: transparent; // for IE
-
-  &:hover {
-    cursor: pointer;
-  }
+  display: none;
+  // width: 70px;
+  // height: 70px;
+  // padding-left: 70px;
+  // background-image: url("../img/icon-clip.svg");
+  // background-position: 50%;
+  // background-repeat: no-repeat;
+  // background-color: transparent; // for IE
 }
 
 @media (min-width: 1315px) {
@@ -445,7 +437,7 @@ input:-webkit-autofill:active  {
 @media (max-width: 1199px) {
   .hero {
     min-height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     background: url("../img/bg-promo.png") 50% no-repeat;
     background-size: cover;
   }
@@ -514,7 +506,7 @@ input:-webkit-autofill:active  {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .hero {
-    padding-bottom: 60px;
+    padding-bottom: 65px;
     background-size: cover;
   }
 
@@ -586,7 +578,7 @@ input:-webkit-autofill:active  {
 
 @media (min-width: 640px) and (max-width: 767px) {
   .hero {
-    padding-bottom: 60px;
+    padding-bottom: 65px;
     background-size: cover;
   }
 
@@ -689,7 +681,7 @@ input:-webkit-autofill:active  {
   }
 
   .hero {
-    padding-bottom: 60px;
+    padding-bottom: 65px;
     background-size: cover;
   }
 
@@ -775,7 +767,7 @@ input:-webkit-autofill:active  {
   }
 
   .hero {
-    padding: 30px 0 60px;
+    padding: 30px 0 67px;
     background-size: cover;
   }
 

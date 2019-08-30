@@ -167,7 +167,8 @@
     .components-list__header:before {
       right: -126px;
       bottom: 34px;
-      transform: rotate(27deg);    }
+      transform: rotate(27deg);
+    }
   }
 
   .components-list:last-child {
@@ -364,6 +365,12 @@
   }
 }
 
+@media (min-width: 640px) {
+  .components-list__title-brake {
+    display: none;
+  }
+}
+
 @media (min-width: 480px) and (max-width: 639px) {
   .components__wrapper {
     padding-bottom: 0;
@@ -392,6 +399,7 @@
   .components-list:last-child .components-list__img {
     margin: 0;
   }
+
   .components-list__discription {
     text-align: center;
   }

@@ -451,7 +451,7 @@
                             <div class="components-list__header">
                                 <div class="components-list__title-wrapper">
                                     <h3 class="components-list__title">
-                                        Экстракт Листьев Ортосифона
+                                        Экстракт <br class="components-list__title-brake">Листьев Ортосифона
                                     </h3>
                                     <span class="components-list__subtitle" href="">
                                         действует на&nbsp;болезни мочеполовой системы
@@ -521,7 +521,7 @@
                                 эффективное
                                 средство, которое начинает действовать с&nbsp;самого первого приема. Главное его
                                 свойства —
-                                он&nbsp;нормализует работу всей мочеполовой системы.
+                                он нормализует работу всей мочеполовой системы.
                             </p>
                         </div>
                         <p class="doctor__position">
@@ -679,6 +679,7 @@
                     <div class="form__input_text-wrapper">
                         <input class="form__input" type="text" name="text" placeholder="Текст отзыва" required>
                         <div class="form__input_clip-wrapper">
+                            <img class="review__file-trigger" src="assets/img/icon-clip.svg" alt="Добавить файл">
                             <input class="form__input_clip" type="file" name="file">
                         </div>
                     </div>
@@ -929,51 +930,53 @@
 
     <div class="ever-popup-build">
         <div class="popup" id="cloneThis">
-            <div class="popup__wrapper">
-                <div class="popup__product">
-                    <div class="product">
-                        <span class="product__discont">
-                            -50<img class="product__percent" src="assets/img/icon-percent-dark.png" alt="%">
-                        </span>
-                        <img src="assets/img/product.png" alt="Уреферон фото" class="product__image">
+            <div class="popup__wrapper-out">
+                <div class="popup__wrapper">
+                    <div class="popup__product">
+                        <div class="product">
+                            <span class="product__discont">
+                                -50<img class="product__percent" src="assets/img/icon-percent-dark.png" alt="%">
+                            </span>
+                            <img src="assets/img/product.png" alt="Уреферон фото" class="product__image">
+                        </div>
                     </div>
-                </div>
-                <div class="popup__form">
-                    <form class="form x_order_form" action="/submit" method="POST">
-                        <div class="form__prices">
-                            <div class="form__prices-wrapper">
-                                <span class="form__old-price">Cтарая цена</span>
-                                <span class="form__old-amount x_price_previous">999</span>
-                                <span class="form__currency x_currency">руб</span>
-                            </div>
-                            <div class="form__prices-wrapper">
-                                <span class="form__new-price">Новая цена</span>
-                                <span class="form__new-amount x_price_current">500</span>
-                                <div class="form__currency-box">
+                    <div class="popup__form">
+                        <form class="form x_order_form" action="/submit" method="POST">
+                            <div class="form__prices">
+                                <div class="form__prices-wrapper">
+                                    <span class="form__old-price">Cтарая цена</span>
+                                    <span class="form__old-amount x_price_previous">999</span>
                                     <span class="form__currency x_currency">руб</span>
-                                    <span>*</span>
+                                </div>
+                                <div class="form__prices-wrapper">
+                                    <span class="form__new-price">Новая цена</span>
+                                    <span class="form__new-amount x_price_current">500</span>
+                                    <div class="form__currency-box">
+                                        <span class="form__currency x_currency">руб</span>
+                                        <span>*</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <p class="form__title">
-                            Осталось <span class="form__remain">15</span> упаковок<br>по Акции
-                        </p>
-                        <div class="input-wrapper">
-                            <img src="assets/img/icon-login.svg" alt="">
-                            <input class="form__input form__input_login" type="text" name="name" placeholder="Имя"
-                                required>
-                        </div>
-                        <div class="input-wrapper">
-                            <img src="assets/img/icon-phone-form.svg" alt="">
-                            <input class="form__input form__input_phone" type="tel" name="phone" placeholder="Телефон"
-                                required>
-                        </div>
-                        <button class="form__submit">
-                            Заказать <span class="form__submit-small">со&nbsp;скидкой</span>
-                        </button>
-                        <span class="">* при заказе курса</span>
-                    </form>
-                    <!-- /.hero-form -->
+                            <p class="form__title">
+                                Осталось <span class="form__remain">15</span> упаковок<br>по Акции
+                            </p>
+                            <div class="input-wrapper">
+                                <img src="assets/img/icon-login.svg" alt="">
+                                <input class="form__input form__input_login" type="text" name="name" placeholder="Имя"
+                                    required>
+                            </div>
+                            <div class="input-wrapper">
+                                <img src="assets/img/icon-phone-form.svg" alt="">
+                                <input class="form__input form__input_phone" type="tel" name="phone" placeholder="Телефон"
+                                    required>
+                            </div>
+                            <button class="form__submit">
+                                Заказать <span class="form__submit-small">со&nbsp;скидкой</span>
+                            </button>
+                            <span class="">* при заказе курса</span>
+                        </form>
+                        <!-- /.hero-form -->
+                    </div>
                 </div>
             </div>
         </div>
