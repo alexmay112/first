@@ -185,7 +185,7 @@
   }
 
   &__input {
-    margin: 15px 19px 15px 0;
+    margin: 20px 19px 20px 0;
 
     &_login {
       flex-basis: 270px;
@@ -261,10 +261,18 @@
 }
 
 .section.review .input-wrapper img {
-  top: 36px;
+  top: 41px;
 }
 
-
+@media (min-width: 1200px) {
+  .section.review .input-wrapper {
+    margin-right: 20px;
+  }
+  .review .form__input {
+    width: 100%;
+    margin-right: 0;
+  }
+}
 @media (min-width: 320px) and (max-width: 570px) {
   .slick-prev {
     top: 85px;

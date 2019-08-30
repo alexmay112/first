@@ -736,10 +736,6 @@ li {
   line-height: 18px;
 }
 
-.reasons .section__title {
-  margin-bottom: -7px;
-}
-
 .doctor.section {
   padding-bottom: 0;
 }
@@ -861,6 +857,24 @@ li {
   .fast .fast__title {
     font-size: 30px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .reasons .section__title {
+    margin-bottom: 0;
+  }
+  .reasons .section__subtitle {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reasons .section__title {
+    margin-bottom: 0;
+  }
+  .reasons .section__subtitle {
+    margin-top: 13px;
   }
 }
 
@@ -1228,22 +1242,6 @@ li {
   background: #f6f9f8;
 }
 
-.form__input ::-webkit-input-placeholder {
-  color: red;
-}
-
-.form__input :-ms-input-placeholder {
-  color: red;
-}
-
-.form__input ::-ms-input-placeholder {
-  color: red;
-}
-
-.form__input ::placeholder {
-  color: red;
-}
-
 .form__input:hover {
   color: #000;
 }
@@ -1343,7 +1341,7 @@ input::-moz-placeholder {
 .form .form__input_text-wrapper .form__input {
   width: 100%;
   margin-right: 0;
-  padding: 25px 55px 25px 25px;
+  padding: 23px 55px 23px 25px;
   background-image: none;
 }
 
@@ -3333,7 +3331,7 @@ input::-moz-placeholder {
 }
 
 .review .form__input {
-  margin: 15px 19px 15px 0;
+  margin: 20px 19px 20px 0;
 }
 
 .review .form__input_login {
@@ -3414,7 +3412,17 @@ input::-moz-placeholder {
 }
 
 .section.review .input-wrapper img {
-  top: 36px;
+  top: 41px;
+}
+
+@media (min-width: 1200px) {
+  .section.review .input-wrapper {
+    margin-right: 20px;
+  }
+  .review .form__input {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 570px) {
